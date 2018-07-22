@@ -16,6 +16,9 @@
     <link href="css/custom.css" rel="stylesheet">
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 
 <body style="width: 90%; margin-right: auto; margin-left: auto;">
@@ -49,24 +52,51 @@
     <!--/Nav Bar-->
     <!--Header-->
     <div container class="container-top">
-        <div class="flex-center flex-column">
-            <img src="./img/logos/avatar.jpg" style="width="500"; height="600"">
-            <h1 class="animated fadeIn mb-4" style="font-family: Product Sans; font-weight: bold">Juan Carlos Garfias Tovar</h1>
-            <h5 class="animated fadeIn mb-3">Junior Fullstack Developer, Designer, Filmaker & Student</h5>
+        <div class="flex-center flex-column" style="margin-top: 50px;margin-bottom: 95px;">
+              <img src="./img/logos/avatar.jpg" style="width="500"; height="600"">
+              <h1 class="animated fadeIn mb-4" style="font-family: Product Sans; font-weight: bold">Juan Carlos Garfias Tovar</h1>
+              <h5 class="animated fadeIn mb-3">Junior Fullstack Developer, Designer, Filmaker & Student</h5>
+              <div style="display: block;margin-left: auto;margin-right: auto">
+                	<i class="fa fa-angle-double-down"style="margin-top:10px;font-size:48px;"></i>
+              </div>
         </div>
     </div>
     <!--/Header-->
     <!--Bio-->
-    <div class="about">
+    <div class="jumbotron" id="about">
       <div class="inner">
-        <br><br>
         <div class="up-text">
         <p>Developer Information</p>
         </div>
-        <div class="bio">
+        <div class="jumbotron" id="bio">
           <div class="row">
+              <div class="col align-self-center">
+                  <a style="text-align: center;font-family:Product Sans;color:white; font-weight: 500;margin-left: 10px;">Who am I ?</a>
+                </div>
+          </div>
+          <div class="row">
+            <div class="col-sm" style="margin-left:20px;margin-right:20px; margin-top: auto; margin-bottom: auto;">
+                <img src="./img/logos/user.png" style="width="527"; height="527"">
+            </div>
             <div class="col-sm">
-                <img src="./img/logos/user.png" style="width="400"; height="400"">
+              <div class="container" id="info">
+                I´m an 18yr old guy who loves computers and graphic design.
+                I’ve been working with PC’s since I was a child. I’ve always 
+                felt passion towards learning new things and decided to learn 
+                and understand more than the average people do about computers.
+                I began formally coding in 2017 at Codeacamp with Ruby on Rails.
+                <br><br>
+                I’m in high school at Tecnológico de Monterrey in the International Baccalaureate program.
+                I’m looking forward to study Computer science or Computer engineering.
+                <br><br>
+                I’ve participated in several student groups such as Taman Keet 3933 where I worked in the 
+                programming department (Robotics Representative Team of Tecnológico de Monterrey, Campus Santa Fe),
+                Activatec (Events Organization Group at of Tecnológico de Monterrey, Campus Santa Fe) as the group
+                president and in the Audiovisual Production group of Tecnológico de Monterrey, Campus Santa Fe.
+                <br><br>
+                Right now I have a Computer Science Club called <a href="http://ctrl-alt-tec.tk/">Ctrl+Alt+Tec</a> where we teach people to solve problems,
+                code, be creative and overall make them understand about the current technology and the ones to come.
+              </div>
             </div>
           </div>
           
@@ -91,6 +121,79 @@
       </div>
     </div>
     <!--/Bio-->
+    <!--Résumé-->
+    <div class="jumbotron">
+        <div class="inner justify-content-center">
+            <div class="card-deck">
+                <div class="card">
+                    <i class="fa fa fa-pencil" style="font-size:70px; margin-left:22px; margin-top:10px;"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">Education</h5>
+                    <p class="card-text">
+                    <b>Tecnológico de Monterrey</b>
+                    <br>
+                    International Baccalaureate Highscool program
+                    <br>
+                    <b>University of...</b>
+                    <br>
+                    Major in Computer Science
+                  </p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+                <div class="card">
+                  <i class="fa fa fa-briefcase" style="font-size:70px; margin-left:22px; margin-top:10px;"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">Experience</h5>
+                    <p class="card-text">
+                      <b>Video Editor & Graphic Designer</b>
+                      <br>
+                      <a href="jjeventos.com">J&J Eventos Especiales</a>
+                      <br>
+                      <b>Software Engineering</b>
+                      <br>
+                      <a href="jjeventos.com">J&J Eventos Especiales</a>
+                      <br>
+                      <b>Computer Science Instructor</b>
+                      <br>
+                      <a href="ctrl-alt-tec.tk">Ctrl+Alt+Tec</a>
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+                <div class="card">
+                  <i class="fa fa fa fa-laptop" style="font-size:70px; margin-left:22px; margin-top:10px;"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">Skills</h5>
+                      Object Oriented programming
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                      </div>
+                      Web Development
+                      <div class="progress">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">50%</div>
+                      </div>
+                      Design
+                      <div class="progress">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">95%</div>
+                      </div>
+                      Data Science
+                      <div class="progress">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">25%</div>
+                      </div>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <!--/Résumé-->
     <!-- /Start your project here-->
 
     <!-- SCRIPTS -->
