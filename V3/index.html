@@ -16,6 +16,8 @@
     <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
     <!--Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Charts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script>
       $(".rotate").textrotator({
         animation: "dissolve", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
@@ -36,10 +38,10 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Résumé</a>
+                <a class="nav-link" href="#resume">Résumé</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="#">Projects</a>
@@ -122,8 +124,21 @@
     </section>
     <!--/Bio-->
     <!--Résumé-->
-    <div class="jumbotron">
-        <div class="inner justify-content-center">
+    <div class="jumbotron" id="resume">
+          <div class="row">
+            <div class="col-md-6">
+                <canvas id="radarChart"></canvas>
+            </div>
+            <div class="col">
+                <div class="col">
+                    <div class="p-5">
+                      <h2 class="display-4">Developer Skills</h2>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div Class="jumbotron" id="resume-1">
             <div class="card-deck">
                 <div class="card">
                     <i class="fa fa fa-pencil" style="font-size:70px; margin-left:22px; margin-top:10px;"></i>
@@ -198,6 +213,8 @@
 
     <!-- SCRIPTS -->
     <!-- JQuery -->
+    <!--Chart-->
+    <script type="text/javascript" src="js\chart.js"></script>
     <!--Rotation-->
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="jquery.simple-text-rotator.js"></script>

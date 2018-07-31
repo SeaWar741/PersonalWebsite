@@ -124,7 +124,11 @@ h6 {
 #about{
     margin-bottom: 30px;
 }
-
+/*Resume*/
+.card-deck{
+    margin-left: auto;
+    margin-right: auto;
+}
 /* Animations */
 .rotating {
     display: inline-block;
