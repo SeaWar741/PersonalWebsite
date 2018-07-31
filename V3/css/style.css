@@ -158,6 +158,13 @@ a:active {
     margin-bottom: auto;
     font-size: 40px;
 }
+.languages{
+    margin-top: 100px;
+}
+.list-group-item{
+    background-color:transparent;
+}
+
 .vertical-center {
     min-height: 70%;  /* Fallback for browsers do NOT support vh unit */
     min-height: 70vh; /* These two lines are counted as one :-)       */
@@ -165,6 +172,11 @@ a:active {
     display: flex;
     align-items: center;
   }
+/*Footer*/
+.footer{
+    background-color: black;
+    height: 60px;
+}
 /* Animations */
 .rotating {
     display: inline-block;
