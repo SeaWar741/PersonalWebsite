@@ -16,6 +16,8 @@
     <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
     <!--Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
     <!--Charts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script>
@@ -62,7 +64,9 @@
               <h1 class="animated fadeIn mb-4">Juan Carlos Garfias Tovar</h1>
               <span class="rotate"><h5>Junior Fullstack Developer, Designer, Filmaker,Student</h5></span>
               <div style="">
-                	<i class="fa fa-angle-double-down"style="margin-top:10px;font-size:48px;"></i>
+                <a href="#about">
+                  <i class="fa fa-angle-double-down"style="margin-top:10px;font-size:48px;"></i>
+                </a>
               </div>
           </div>
           <div class="bg-circle-1 bg-circle"></div>
@@ -103,28 +107,31 @@
             </div>
           </div>
         </div>
-        <div id="code">
-          <div id="console">
-            >Juan.origin()
-            <br>
-             =>"Mexico City"
-            <br>
-            <br>
-            >Juan.education()
-            <br>
-             =>"Tecnológico de Monterrey Campus Santa Fe"
-            <br><br>
-            >Juan.interests()
-            <br>
-             =>["Data Science","Code","IoT","Films","Camping","Learning"]
-            <br><br>
-          </div>
+        <div class="row justify-content-center">
+            <div id="code">
+                <div id="console">
+                  >Juan.origin()
+                  <br>
+                  =>"Mexico City"
+                  <br>
+                  <br>
+                  >Juan.education()
+                  <br>
+                  =>"Tecnológico de Monterrey Campus Santa Fe"
+                  <br><br>
+                  >Juan.interests()
+                  <br>
+                  =>["Data Science","Code","IoT","Films","Camping","Learning"]
+                  <br><br>
+                </div>
+            </div>
         </div>
       </div>
     </section>
     <!--/Bio-->
-    <!--Résumé-->
-    <div class="jumbotron" id="resume">
+    <!--Skills-->
+    <section>
+      <div class="jumbotron" id="resume">
           <div class="row">
             <div class="col-md-6">
                 <canvas id="radarChart"></canvas>
@@ -133,81 +140,107 @@
                 <div class="col">
                     <div class="p-5">
                       <h2 class="display-4">Developer Skills</h2>
+                      <h3 class="subheading-text">Favorite Programming Languages</h3>
+                      <div class="vertical-center">
+                        <ul class="list-group list-group-flush" id="languages">
+                            <li class="list-group-item">
+                            <i class="devicon-python-plain colored"></i>
+                              Python
+                            </li>
+                            <li class="list-group-item">
+                              <i class="devicon-java-plain colored"></i>
+                              Java
+                            </li>
+                            <li class="list-group-item">
+                              <i class="devicon-ruby-plain colored"></i>
+                              Ruby
+                            </li>
+                            <li class="list-group-item">
+                              <i class="devicon-html5-plain colored"></i>
+                              Html(It's not a language I know 😋)
+                            </li>
+                        </ul>
                     </div>
+                  </div>
                 </div>
             </div>
           </div>
-    </div>
-    <div Class="jumbotron" id="resume-1">
-            <div class="card-deck">
-                <div class="card">
-                    <i class="fa fa fa-pencil" style="font-size:70px; margin-left:22px; margin-top:10px;"></i>
-                  <div class="card-body">
-                    <h5 class="card-title">Education</h5>
-                    <p class="card-text">
-                    <b>Tecnológico de Monterrey</b>
-                    <br>
-                    International Baccalaureate Highscool program
-                    <br>
-                    <b>University of...</b>
-                    <br>
-                    Major in Computer Science
-                  </p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
-                </div>
-                <div class="card">
-                  <i class="fa fa fa-briefcase" style="font-size:70px; margin-left:22px; margin-top:10px;"></i>
-                  <div class="card-body">
-                    <h5 class="card-title">Experience</h5>
-                    <p class="card-text">
-                      <b>Video Editor & Graphic Designer</b>
+      </div>
+    </section>
+    <!--/Skills-->
+    <!--Resumé-->
+    <section>
+      <div Class="jumbotron" id="resume-1">
+              <div class="card-deck">
+                  <div class="card">
+                      <i class="fa fa fa-pencil" style="font-size:70px; margin-left:22px; margin-top:10px;"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Education</h5>
+                      <p class="card-text">
+                      <b>Tecnológico de Monterrey</b>
                       <br>
-                      <a href="jjeventos.com">J&J Eventos Especiales</a>
+                      International Baccalaureate Highscool program
                       <br>
-                      <b>Software Engineering</b>
+                      <b>University of...</b>
                       <br>
-                      <a href="jjeventos.com">J&J Eventos Especiales</a>
-                      <br>
-                      <b>Computer Science Instructor</b>
-                      <br>
-                      <a href="ctrl-alt-tec.tk">Ctrl+Alt+Tec</a>
+                      Major in Computer Science
                     </p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
                   </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                  <div class="card">
+                    <i class="fa fa fa-briefcase" style="font-size:70px; margin-left:22px; margin-top:10px;"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Experience</h5>
+                      <p class="card-text">
+                        <b>Video Editor & Graphic Designer</b>
+                        <br>
+                        <a href="http://jjeventos.com">J&J Eventos Especiales</a>
+                        <br>
+                        <b>Software Engineering</b>
+                        <br>
+                        <a href="http://jjeventos.com">J&J Eventos Especiales</a>
+                        <br>
+                        <b>Computer Science Instructor</b>
+                        <br>
+                        <a href="http://ctrl-alt-tec.tk">Ctrl+Alt+Tec</a>
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <i class="fa fa fa fa-laptop" style="font-size:70px; margin-left:22px; margin-top:10px;"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Skills</h5>
+                        Object Oriented programming
+                      <div class="progress">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                        </div>
+                        Web Development
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                        Design
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                        Data Science
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
                   </div>
                 </div>
-                <div class="card">
-                  <i class="fa fa fa fa-laptop" style="font-size:70px; margin-left:22px; margin-top:10px;"></i>
-                  <div class="card-body">
-                    <h5 class="card-title">Skills</h5>
-                      Object Oriented programming
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                      </div>
-                      Web Development
-                      <div class="progress">
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">50%</div>
-                      </div>
-                      Design
-                      <div class="progress">
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">95%</div>
-                      </div>
-                      Data Science
-                      <div class="progress">
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">25%</div>
-                      </div>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
-                </div>
-              </div>
-        </div>
-    </div>
+          </div>
+      </div>
+    </section>
     <!--/Résumé-->
     <!-- /Start your project here-->
 

@@ -3,7 +3,15 @@
       var myRadarChart = new Chart(ctxR, {
           type: 'radar',
           data: {
-              labels: ["Object Oriented programming", "Web Development", "Design", "Data Science", "Social Media Management", "Video Editing"],
+              labels: ["Java",
+                "Javascript",
+                "Python",
+                "Html",
+                "CSS",
+                "C++",
+                "MySQL",
+                "SQLite",
+                "Ruby"],
               datasets: [
                   {
                       label: "Knowleadge",
@@ -13,8 +21,17 @@
                       pointStrokeColor: "#fff",
                       pointHighlightFill: "#fff",
                       pointHighlightStroke: "rgba(220,220,220,1)",
-                      data: [100, 60, 95, 25, 80, 90]
-                  },
+                      data: [100,
+                        35,
+                        60,
+                        90,
+                        80,
+                        25,
+                        15,
+                        90,
+                        90]
+                  }
+                  /*,
                   {
                       label: "Experience",
                       fillColor: "rgba(151,187,205,0.2)",
@@ -25,6 +42,7 @@
                       pointHighlightStroke: "rgba(151,187,205,1)",
                       data: [70, 100, 100, 10, 96, 100]
                   }
+                  */
               ]
           },
           options: {

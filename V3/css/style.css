@@ -9,8 +9,32 @@ h5,
 h6 {
     font-weight: 800 !important;
 }
-/*images*/
+.subheading-text{
+    color:rgb(151, 150, 150);
+}
+/*text*/
+/* unvisited link */
+a:link {
+    color: orange;
+    font-weight: 600;
+}
 
+/* visited link */
+a:visited {
+    color: orange;
+}
+
+/* mouse over link */
+a:hover {
+    color:rgb(253, 219, 68);
+    font-weight: 900;
+    text-decoration: none;  
+}
+
+/* selected link */
+a:active {
+    color: orange;
+}
 
 /*Nav Bar*/
 .navbar-custom {
@@ -129,6 +153,18 @@ h6 {
     margin-left: auto;
     margin-right: auto;
 }
+#languages{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 40px;
+}
+.vertical-center {
+    min-height: 70%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 70vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+  }
 /* Animations */
 .rotating {
     display: inline-block;
