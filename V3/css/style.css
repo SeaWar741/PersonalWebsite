@@ -195,6 +195,10 @@ a:active {
     margin-left: auto;
     padding: 3rem!important;
 }
+/*Projects*/
+.project-grid{
+    padding: 2rem 0 4rem;
+}
 /*Footer*/
 .footer{
     background-color: black;
