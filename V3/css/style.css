@@ -9,6 +9,9 @@ h5,
 h6 {
     font-weight: 800 !important;
 }
+.display-4{
+    padding-top: 15px;
+}
 .subheading-text{
     color:rgb(151, 150, 150);
 }
@@ -152,6 +155,12 @@ a:active {
 .card-deck{
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
+}
+#r-card{
+    border-radius: 25px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+    text-align: center;
 }
 #languages{
     margin-top: auto;
@@ -171,11 +180,19 @@ a:active {
   
     display: flex;
     align-items: center;
-  }
+}
+#radarChart{
+    width: 90% !important;
+    height: auto !important;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 3rem!important;
+}
 /*Footer*/
 .footer{
     background-color: black;
     height: 60px;
+    
 }
 /* Animations */
 .rotating {
