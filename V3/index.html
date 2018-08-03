@@ -16,7 +16,6 @@
     <!--Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
     <script>
       $(".rotate").textrotator({
         animation: "dissolve", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
@@ -127,7 +126,7 @@
     <!--/Bio-->
     <!--Skills-->
     <section>
-      <div class="jumbotron" id="resume" style="margin-bottom: 0px !important">
+      <div class="div" id="resume" style="margin-bottom: 0px !important">
           <div class="row">
             <div class="col-md-6">
                 <canvas id="radarChart" class="vertical-center"></canvas>
@@ -162,11 +161,33 @@
             </div>
           </div>
       </div>
+      <div class="container" id="skills">
+        <h2 class="display-4" id="skills-text">Software & Programming languages</h2>
+        <ul>
+          <li>Python</li>
+          <li>Ruby</li>
+          <li>c++</li>
+          <li>git</li>
+          <li>html</li>
+          <li>css</li>
+          <li>javascript</li>
+          <li>Java</li>
+          <li>Adobe Premiere</li>
+          <li>Adobe Photoshop</li>
+          <li>Adobe After Effects</li>
+          <li>Sony Vegas</li>
+          <li>ReactNative</li>
+          <li>Sqlite</li>
+          <li>MySQL</li>
+          <li>FireBase</li>
+          <li>Linux bash</li>
+        </ul>
+      </div>
     </section>
     <!--/Skills-->
     <!--Resumé-->
-    <section>
-      <div class="container" id="resume">
+    <div id="resume2">
+      <div class="container" style="margin-bottom: 50px;">
           <h2 class="display-4">Resume</h2>
           <h3>Education</h3>
           <div class="card-deck">
@@ -271,87 +292,203 @@
                 </div>
           </div>
       </div>
-      <div Class="jumbotron" id="resume-1">
-              <div class="card-deck">
-                  <div class="card">
-                      <i class="fa fa fa-pencil" style="font-size:70px; margin-left:22px; margin-top:10px;"></i>
-                    <div class="card-body">
-                      <h5 class="card-title">Education</h5>
-                      <p class="card-text">
-                      <b>Tecnológico de Monterrey</b>
-                      <br>
-                      International Baccalaureate Highscool program
-                      <br>
-                      <b>University of...</b>
-                      <br>
-                      Major in Computer Science
-                    </p>
-                    </div>
-                    <div class="card-footer">
-                      <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <i class="fa fa fa-briefcase" style="font-size:70px; margin-left:22px; margin-top:10px;"></i>
-                    <div class="card-body">
-                      <h5 class="card-title">Experience</h5>
-                      <p class="card-text">
-                        <b>Video Editor & Graphic Designer</b>
-                        <br>
-                        <a href="http://jjeventos.com">J&J Eventos Especiales</a>
-                        <br>
-                        <b>Software Engineering</b>
-                        <br>
-                        <a href="http://jjeventos.com">J&J Eventos Especiales</a>
-                        <br>
-                        <b>Computer Science Instructor</b>
-                        <br>
-                        <a href="http://ctrl-alt-tec.tk">Ctrl+Alt+Tec</a>
-                      </p>
-                    </div>
-                    <div class="card-footer">
-                      <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <i class="fa fa fa fa-laptop" style="font-size:70px; margin-left:22px; margin-top:10px;"></i>
-                    <div class="card-body">
-                      <h5 class="card-title">Skills</h5>
-                        Object Oriented programming
-                      <div class="progress">
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+    </div>
+    <section id="language">
+      <div class="container">
+          <h2 class="display-4">Languages</h2>
+          <div class="container" id="language-inner">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                  <div class="row align-items-center">
+                      <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <img class="img-fluid avatar" src="img\languages\spanish.png" alt="">
                         </div>
-                        Web Development
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">50%</div>
+                      </div>
+                      <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                          <h2 class="display-4">Spanish</h2>
+                          <h3 class="subheading-text">Native Speaker</h3>
                         </div>
-                        Design
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">95%</div>
+                      </div>
+              </li>
+              <li class="list-group-item">
+                  <div class="row align-items-center">
+                      <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                            <img class="img-fluid avatar" src="img\languages\uk.png" alt="">
                         </div>
-                        Data Science
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">25%</div>
+                      </div>
+                      <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                          <h2 class="display-4">English</h2>
+                          <h3 class="subheading-text">Near Native Speaker</h3>
                         </div>
-                    </div>
-                    <div class="card-footer">
-                      <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                  </div>
-                </div>
+                      </div>
+              </li>
+              <li class="list-group-item">
+                  <div class="row align-items-center">
+                      <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <img class="img-fluid avatar" src="img\languages\france.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                          <h2 class="display-4">French</h2>
+                          <h3 class="subheading-text">Basic communication skills (A2)</h3>
+                        </div>
+                      </div>
+              </li>
+              <li class="list-group-item">
+                  <div class="row align-items-center">
+                      <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                            <img class="img-fluid avatar" src="img\languages\china.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                          <h2 class="display-4">Mandarin</h2>
+                          <h3 class="subheading-text">Basic communication skills</h3>
+                        </div>
+                      </div>
+              </li>
+            </ul>
           </div>
       </div>
     </section>
     <!--/Résumé-->
     <!--Projects-->
     <section>
-      <div class="jumbotron">
-
-      </div>
     </section>
+    <div class="container">
+        <div class="col-md-12">
+          <h1>Bootstrap Row Slider</h1>
+      
+          <div class="well">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row" align="center">
+                            <div class="col-sm-3">
+                              <a class="thumbnail">
+                                  <div class="img__wrap">
+                                      <img class="img__img" src="http://placehold.it/257x200.jpg" />
+                                      <div class="img__description_layer">
+                                        <p class="img__description">This image looks super neat.</p>
+                                      </div>
+                                  </div>
+                              </a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a class="thumbnail">
+                                    <div class="img__wrap">
+                                        <img class="img__img" src="http://placehold.it/257x200.jpg" />
+                                        <div class="img__description_layer">
+                                          <p class="img__description">This image looks super neat.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-3">
+                              <a class="thumbnail">
+                                  <div class="img__wrap">
+                                      <img class="img__img" src="http://placehold.it/257x200.jpg" />
+                                      <div class="img__description_layer">
+                                        <p class="img__description">This image looks super neat.</p>
+                                      </div>
+                                  </div>
+                              </a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a class="thumbnail">
+                                    <div class="img__wrap">
+                                        <img class="img__img" src="http://placehold.it/257x200.jpg" />
+                                        <div class="img__description_layer">
+                                          <p class="img__description">This image looks super neat.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                              </div>
+                          </div>
+                          <!--/row-->
+                    </div>
+                    <div class="carousel-item" align="center">
+                        <div class="row" align="center">
+                            <div class="col-sm-3">
+                              <a class="thumbnail">
+                                  <div class="img__wrap">
+                                      <img class="img__img" src="http://placehold.it/257x200.jpg" />
+                                      <div class="img__description_layer">
+                                        <p class="img__description">This image looks super neat.</p>
+                                      </div>
+                                  </div>
+                              </a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a class="thumbnail">
+                                    <div class="img__wrap">
+                                        <img class="img__img" src="http://placehold.it/257x200.jpg" />
+                                        <div class="img__description_layer">
+                                          <p class="img__description">This image looks super neat.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-3">
+                              <a class="thumbnail">
+                                  <div class="img__wrap">
+                                      <img class="img__img" src="http://placehold.it/257x200.jpg" />
+                                      <div class="img__description_layer">
+                                        <p class="img__description">This image looks super neat.</p>
+                                      </div>
+                                  </div>
+                              </a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a class="thumbnail">
+                                    <div class="img__wrap">
+                                        <img class="img__img" src="http://placehold.it/257x200.jpg" />
+                                        <div class="img__description_layer">
+                                          <p class="img__description">This image looks super neat.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                              </div>
+                          </div>
+                          <!--/row-->
+                    </div>
+                </div>
+          </div>
+          <div class="container">
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+          </div>
+          <!--/well-->
+        </div>
+      </div>
+      
     <!--/Projects-->
     <!--Contact-->
     <section>
+      <div class="container" id="projects">
+        <h1 class="display-4">My Projects</h1>
+        <h3 class="subheading-text">Favorite Programming Languages</h3>
+        <div class="project-grid">
+        </div>
+      </div>
       <div class="jumbotron">
           <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:juanca741&size=detail&theme=light&show-count=0" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
       </div>
@@ -371,6 +508,8 @@
     <!--Chart-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script type="text/javascript" src="js\chart.js"></script>
+    <!--Carousel-->
+    <script type="text/javascript" src="js/caroussel.js"></script>
     <!--Rotation-->
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="jquery.simple-text-rotator.js"></script>

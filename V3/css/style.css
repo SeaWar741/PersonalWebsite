@@ -1,5 +1,6 @@
 body{
     font-family:Product Sans;
+    overflow-x:hidden;
 }
 h1,
 h2,
@@ -152,6 +153,10 @@ a:active {
     margin-bottom: 30px;
 }
 /*Resume*/
+#resume{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .card-deck{
     margin-left: auto;
     margin-right: auto;
@@ -195,9 +200,123 @@ a:active {
     margin-left: auto;
     padding: 3rem!important;
 }
+#skills{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
+    text-align: center;
+}
+#skills li{
+    display: inline-block;
+    margin: 7px;
+    padding: 5px 10px;
+    color: whitesmoke;
+    background: hsl(17, 97%, 54%);
+    list-style: none;
+    cursor: default;
+    font-size: 1.2em;
+}
+#skills-text{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#resume2{
+}
+/*Languages*/
+.avatar {
+    vertical-align: middle;
+    object-fit: cover;
+    width:150px;
+    height:150px;
+    border-radius: 90% !important;
+}
 /*Projects*/
 .project-grid{
     padding: 2rem 0 4rem;
+}
+.carousel-control {
+    padding-top: 10%;
+    width: 5%;
+  }
+  
+.thumbnail {
+    width: 500px;
+    height: 500px;
+    background-color: skyblue;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+/* relevant styles */
+.img__img{
+    object-fit: cover;
+    width:230px;
+    height:230px;
+}
+.img__wrap {
+    position: relative;
+    height: 230px;
+    width: 230px;
+  }
+  
+  .img__description_layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(36, 62, 206, 0.6);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+  
+  .img__wrap:hover .img__description_layer {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .img__description {
+    transition: .2s;
+    transform: translateY(1em);
+  }
+  
+  .img__wrap:hover .img__description {
+    transform: translateY(0);
+  }
+  .carousel-control-prev-icon{
+    background-image: none;
+    margin-left: -300px;
+  }
+  .carousel-control-next-icon {
+    background-image: none;
+    margin-right: -300px;
+  }
+  
+  .carousel-control-next-icon:after
+  {
+    content: '>';
+    font-size: 55px;
+    color: #FB541A;
+  }
+  
+  .carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: #FB541A;
+  }
+  .carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
 }
 /*Footer*/
 .footer{

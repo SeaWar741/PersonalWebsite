@@ -15,8 +15,8 @@ var myRadarChart = new Chart(ctxR, {
         datasets: [
             {
                 label: "Knowleadge",
-                backgroundColor: "rgba(243, 61, 67, 0.3)",
-                borderColor: "rgba(246, 54, 65, 0.5)",
+                backgroundColor: "rgba(251, 88, 24, 0.3)",
+                borderColor: "rgba(251, 88, 24, 0.5)",
                 pointBackgroundColor: "rgba(246, 54, 65, 1)",
                 pointBorderColor: "rgba(255, 255, 255, 1)",
                 lineTension: 0.00009,
