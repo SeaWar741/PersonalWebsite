@@ -232,6 +232,11 @@ a:active {
     border-radius: 90% !important;
 }
 /*Projects*/
+
+#projects{
+    padding-top: 30px;
+    padding-bottom: 30px !important;
+}
 .project-grid{
     padding: 2rem 0 4rem;
 }
@@ -248,16 +253,26 @@ a:active {
     color: white;
     font-size: 30px;
 }
+.btn-primary{
+    background-color: #FB541A;
+    border-color: #FB541A;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    background-color: rgb(251, 165, 26);
+    border-color: rgb(251, 165, 26); /*set the color you want here*/
+}
 /* relevant styles */
 .img__img{
     object-fit: cover;
     width:230px;
-    height:230px;
+    height:400px;
+    border-radius: 4.5%;
 }
 .img__wrap {
     position: relative;
-    height: 230px;
     width: 230px;
+    height: 400px;
+    border-radius: 4.5%;
   }
   
   .img__description_layer {
@@ -266,13 +281,14 @@ a:active {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(36, 62, 206, 0.6);
+    background: rgba(0, 0, 0, 0.7);
     color: #fff;
     visibility: hidden;
     opacity: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 4.5%;
   
     /* transition effect. not necessary */
     transition: opacity .2s, visibility .2s;
@@ -318,6 +334,15 @@ a:active {
     height: 12px;
     background-color: #404040;
 }
+.carousel-indicators .active {
+    background-color: #FB541A;
+}
+.carousel-indicators {
+    bottom:-50px;
+}
+.carousel-inner {
+    margin-bottom:50px;
+ }
 /*Footer*/
 .footer{
     background-color: black;
