@@ -343,6 +343,83 @@ a:active {
 .carousel-inner {
     margin-bottom:50px;
  }
+ /*Contact*/
+.containerc {
+	width: 80%;
+	margin: 100px auto;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.containerc h1 {
+	font-size: 48px;
+	text-transform: uppercase;
+}
+.containerc ul {
+	margin: 0;
+	padding: 0;
+}
+.containerc ul li {
+	list-style: none;
+	float: left;
+	width: calc(100% / 8);
+	box-sizing: border-box;
+}
+.containerc ul li a {
+	display: block;
+	padding: 20px;
+	text-decoration: none;
+	color: #fff;
+}
+.containerc ul li a .fa {
+	font-size: 40px;
+	transition: .5s;
+}
+.containerc ul li a:hover .fa {
+	transform: rotateY(360deg);
+}
+.containerc ul li:nth-child(1) a {
+	background: #3b5999;
+}
+.containerc ul li:nth-child(2) a {
+	background: #55acee;
+}
+.containerc ul li:nth-child(3) a {
+	background: #dd4b39;
+}
+.containerc ul li:nth-child(4) a {
+	background: #007785;
+}
+.containerc ul li:nth-child(5) a {
+	background: #00aff0;
+}
+.containerc ul li:nth-child(6) a {
+	background: #e4405f;
+}
+.containerc ul li:nth-child(7) a {
+	background: #cd201f;
+}
+.containerc ul li:nth-child(8) a {
+	background: #bd081c;
+}
+
+@media (max-width: 992px) {
+	.containerc h1 {font-size: 30px;}
+	.containerc ul li {width: calc(100% / 4);}
+}
+
+@media (max-width: 768px) {
+	.containerc {width: 100%;}
+}
+
+@media (max-width: 480px) {
+	.containerc {margin: 20px auto;}
+	.containerc ul li {width: calc(100% / 2);}
+}
+@media (max-width: 360px) {
+	.containerc {margin: 0 auto;}
+	.containerc ul li {width: calc(100% / 1);}
+}
 /*Footer*/
 .footer{
     background-color: black;
