@@ -21,13 +21,11 @@
     <script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
     <!--Scroll-->
     <script src="js/smooth-scroll.js"></script>
-    <script>
-      $(".rotate").textrotator({
-        animation: "dissolve", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
-        separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
-        speed: 2000 // How many milliseconds until the next word show.
-      });
-    </script>
+    <!--Morphext-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="dist/morphext.css">
+    <!--Captcha-->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
     <!--Nav bar-->
@@ -68,8 +66,8 @@
           <div class="container">
               <img src="./img/logos/avatar.png" class="image-header">
               <h1 class="animated fadeIn mb-4">Juan Carlos Garfias Tovar</h1>
-              <span class="rotate"><h5>Junior Fullstack Developer, Designer, Filmaker,Student</h5></span>
-              <div style="">
+              <span id="js-rotating" style="font-size: 30px; font-weight: bold;"><h5>Junior Fullstack Developer, Designer, Film Maker,Highschool Student</h5></span>
+              <div>
                 <a href="#about">
                   <i class="fa fa-angle-double-down"style="margin-top:10px;font-size:48px;"></i>
                 </a>
@@ -83,7 +81,7 @@
     </div>
     <!--/Header-->
     <!--Bio-->
-    <section>
+    <section id="abu">
       <div class="container" id="about">
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
@@ -137,7 +135,7 @@
     <!--/Bio-->
     <!--Skills-->
     <section id="skill">
-      <div class="div" style="margin-bottom: 0px !important">
+      <div class="div" style="margin-bottom: 90px;">
           <div class="row">
             <div class="col-md-6">
                 <canvas id="radarChart" class="vertical-center"></canvas>
@@ -172,7 +170,7 @@
             </div>
           </div>
       </div>
-      <div class="container" id="skills">
+      <div class="container" id="skills" style="margin-bottom: 90px;">
         <h2 class="display-4" id="skills-text">Software & Programming languages</h2>
         <ul>
           <li>Python</li>
@@ -198,7 +196,7 @@
     <!--/Skills-->
     <!--Resumé-->
     <div id="resume">
-      <div class="container" style="margin-bottom: 50px;">
+      <div class="container" style="margin-bottom: 50px;margin-top: 30px;">
           <h2 class="display-4">Resume</h2>
           <h3>Education</h3>
           <div class="card-deck">
@@ -376,7 +374,7 @@
     <!--/Projects-->
     <!--Contact-->
     <section id="projects">
-      <div class="container">
+      <div class="container" style="margin-top: 20px;">
         <h1 class="display-4">My Projects</h1>
         <h3 class="subheading-text">What I've been working at</h3>
         <div class="container" id="projects">
@@ -503,7 +501,7 @@
     </section>
     <!--/Contact-->
     <div class="container" id="contact">
-      <div class="row align-items-center">
+      <div class="row align-items-center" style="margin-top: 20px;">
         <div class="col-lg-6 order-lg-1">
           <div class="p-5">
             <h2 class="display-4">Social Media</h2>
@@ -524,48 +522,75 @@
         </div>
         <div class="col-lg-6 order-lg-2">
           <div class="p-5">
-            <h2 class="display-4">Email Me</h2>
-            <div class="window">
-                <div class="window__bar">Contact me by email</div>
-                <div class="window__content-frame">
-                  <div class="window__content">
-                      <form>
-                          <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                          </div>
-                          <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                          </div>
-                          <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-                  </div>
-                </div>
-              </div>
+            <div class="container"><h2 class="display-4" id="contact-me">Email me</h2></div>
+            <div class="containerc">
+                <div class="window">
+                    <div class="window__bar">Contact me by email</div>
+                    <div class="window__content-frame">
+                      <div class="window__content">
+                          <form>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1"style="display: block !important; text-align:left;">To:</label>
+                                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="juanca741@gmail.com">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputPassword1" style="display: block !important; text-align:left;">Subject</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="email subject">
+                              </div>
+                              <div class="form-group">
+                                  <textarea id="content" name="Text1" cols="32" rows="5" placeholder="Write the email here..."></textarea>
+                                </div>
+                              <button id="confirm" type="button" class="btn btn-light btn-lg" onclick="sendmail()" value=""><a class="fa fa-plane"> Send email!</a>
+                            </form>
+                      </div>
+                    </div>
             </div>
+          </div>
         </div>
       </div>
+    </div>
+    </div>
     <!-- Footer -->
-    <footer class="footer">
+    <footer id="myFooter">
         <div class="container">
-          <h2 class="m-0 text-center text-white small" >
-            JUAN CARLOS GARFIAS TOVAR © SEAWAR741. 2018/2019 • ALL RIGHTS RESERVED.</h2>
-            <div class="github-widget" data-username="seawar741"></div>
-                  <a href="https://stackoverflow.com/users/8158227/juan-carlos-garfias-tovar">
-                    <img src="https://stackoverflow.com/users/flair/8158227.png?theme=clean" width="208" height="58" alt="profile for Juan Carlos Garfias Tovar at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Juan Carlos Garfias Tovar at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
-                  </a>
-                  <!-- SnapWidget -->
-                  <script src="https://snapwidget.com/js/snapwidget.js"></script>
-                  <iframe src="https://snapwidget.com/embed/579683" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
-                  <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:juanca741&size=detail&theme=light&show-count=0" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3 class="logo"><a href="#"> Juan Carlos Garfias Tovar </a></h3>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Company Information</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Help desk</a></li>
+                        <li><a href="">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:juanca741&size=detail&theme=dark&show-count=0" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- /.container -->
+        <div class="footer-copyright">
+            <p>Juan Carlos Garfias Tovar © SeaWar741. 2018• All rights reserved.</p>
+        </div>
     </footer>
     <!-- /Start your project here-->
 
@@ -596,6 +621,23 @@
           document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
       }
     </script>
+    <script>
+      function sendmail() {
+        var link = document.getElementById('test')
+        var subject = document.getElementById('exampleInputPassword1').value;
+        var content = document.getElementById('content').value;
+        var mailto = String("mailto:juanca741@gmail.com?subject="+subject+"&body="+content);
+        document.getElementById("confirm").value = "Sending!";
+        var txt;
+        if(confirm("Would you like to send the email?")){
+          open(mailto,'_self');
+        }
+        else{
+          alert("Ok.. 😭")
+        }
+        
+      }
+    </script>
     <!-- JQuery -->
     <!--Chart-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
@@ -603,9 +645,17 @@
     <!--Carousel-->
     <script type="text/javascript" src="js/caroussel.js"></script>
     <!--Rotation-->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script type="text/javascript" src="jquery.simple-text-rotator.js"></script>
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="bower_components/jquery/jquery.min.js"><\/script>')</script>
+        <script src="lib/morphext.js"></script>
+        <script>
+            $("#js-rotating").Morphext({
+                animation: "rotateIn",
+                complete: function () {
+                    console.log("This is called after a phrase is animated in! Current phrase index: " + this.index);
+                }
+            });
+        </script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
