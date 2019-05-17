@@ -61,22 +61,22 @@
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </button>
     <!--Header-->
-    <div container class="masthead">
+    <div container class="masthead" style="background-image: url(img/JuanCarlosGarfias.jpg);  /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;">
         <div class="masthead-content">
           <div class="container">
               <img src="./img/logos/avatar.png" class="image-header">
-              <h1 class="animated fadeIn mb-4">Juan Carlos Garfias Tovar</h1>
-              <span id="js-rotating" style="font-size: 30px; font-weight: bold;"><h5>Junior Fullstack Developer, Designer, Film Maker,Highschool Student</h5></span>
+              <h1 class="animated fadeIn mb-4" style="text-shadow: 2px 2px 4px #00000094;">Juan Carlos Garfias Tovar</h1>
+              <span id="js-rotating" style="font-size: 30px; font-weight: bold;text-shadow: 2px 2px 4px #0000003f;"><h5 >Junior Fullstack Developer, Designer, Film Maker,Computer Science Student</h5></span>
               <div>
                 <a href="#about">
                   <i class="fa fa-angle-double-down"style="margin-top:10px;font-size:48px;"></i>
                 </a>
               </div>
           </div>
-          <div class="bg-circle-1 bg-circle"></div>
-          <div class="bg-circle-2 bg-circle"></div>
-          <div class="bg-circle-3 bg-circle"></div>
-          <div class="bg-circle-4 bg-circle"></div>
         </div>
     </div>
     <!--/Header-->
@@ -92,7 +92,7 @@
           <div class="col-lg-6 order-lg-1">
             <div class="p-5">
               <h2 class="display-4">Developer Information</h2>
-              I´m an 18yr old guy who loves computers and graphic design.
+              I´m an 19yr old guy who loves computers and graphic design.
                 I’ve been working with PC’s since I was a child. I’ve always 
                 felt passion towards learning new things and decided to learn 
                 and understand more than the average people do about computers.
@@ -106,7 +106,7 @@
                 Activatec (Events Organization Group at of Tecnológico de Monterrey, Campus Santa Fe) as the group
                 president and in the Audiovisual Production group of Tecnológico de Monterrey, Campus Santa Fe.
                 <br><br>
-                Right now I have a Computer Science Club called <a href="http://ctrl-alt-tec.tk/">Ctrl+Alt+Tec</a> where we teach people to solve problems,
+                Right now I have a Computer Science Club called <a href="https://ctrl-alt-tec.hackclub.com/">Ctrl+Alt+Tec</a> where we teach people to solve problems,
                 code, be creative and overall make them understand about the current technology and the ones to come.
             </div>
           </div>
@@ -121,7 +121,9 @@
                   <br>
                   >Juan.education()
                   <br>
-                  =>"Tecnológico de Monterrey Campus Santa Fe"
+                  =>"Tecnológico de Monterrey Campus Monterrey: Computer Science (ITC)"
+                  <br>
+                  =>"Tecnológico de Monterrey Campus Santa Fe: IBODP"
                   <br><br>
                   >Juan.interests()
                   <br>
@@ -301,6 +303,12 @@
                 </div>
           </div>
       </div>
+      <div class="container">
+          <div class="card" id="r-card">
+            <h1 style="margin-top: 5%">Download CV</h1>
+            <button class="btn orange" type="button" onclick="location.href = './docs/Resume_JuanCarlosGarfiasTovar.pdf'" /><span><i class="fa fa-download" aria-hidden="true" ></i></span></button>
+          </div>
+      </div>
     </div>
     <section id="language">
       <div class="container">
@@ -447,7 +455,7 @@
                                         <img class="img__img" src="img/Projects/happycactus.png" />
                                         <div class="img__description_layer">
                                           <p class="img__description">Happy Cactus Web Android App <br>
-                                            <button type="button" class="btn btn-primary" onclick="location.href='https://github.com/SeaWar741/Happycactus/blob/master/index.html'">More Info</button>
+                                            <button type="button" class="btn btn-primary" onclick="location.href='https://htmlpreview.github.io/?https://raw.githubusercontent.com/SeaWar741/Happycactus/master/index.html'">More Info</button>
                                           </p>
                                         </div>
                                     </div>
@@ -583,7 +591,7 @@
             </div>
         </div>
         <div class="footer-copyright">
-            <p>Juan Carlos Garfias Tovar © SeaWar741. 2018• All rights reserved.</p>
+            <p>Juan Carlos Garfias Tovar © SeaWar741. 2019• All rights reserved.</p>
         </div>
     </footer>
     <!-- /Start your project here-->
@@ -600,7 +608,6 @@
     <script>
       // When the user scrolls down 20px from the top of the document, show the button
       window.onscroll = function() {scrollFunction()};
-
       function scrollFunction() {
           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
               document.getElementById("myBtn").style.display = "block";
@@ -608,7 +615,6 @@
               document.getElementById("myBtn").style.display = "none";
           }
       }
-
       // When the user clicks on the button, scroll to the top of the document
       function topFunction() {
           document.body.scrollTop = 0; // For Safari
