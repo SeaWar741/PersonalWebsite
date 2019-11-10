@@ -55,7 +55,7 @@
               </a>
       </li>
       <li class="nav-item ripple">
-        <a href="#proyects" class="nav-link text-dark">
+        <a href="#education" class="nav-link text-dark">
                   <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
                   Education
               </a>
@@ -67,25 +67,25 @@
 
     <ul class="nav flex-column bg-white mb-0">
         <li class="nav-item ripple">
-            <a href="#" class="nav-link text-dark">
+            <a href="#proyects" class="nav-link text-dark">
                   <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
                       Projects
                   </a>
           </li>
       <li class="nav-item ripple">
-        <a href="#" class="nav-link text-dark ">
+        <a href="#languages" class="nav-link text-dark ">
                   <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
                   Languages
               </a>
       </li>
       <li class="nav-item ripple">
-        <a href="#" class="nav-link text-dark ">
+        <a href="#resume" class="nav-link text-dark ">
                   <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
                   Resume
               </a>
       </li>
       <li class="nav-item ripple">
-        <a href="#" class="nav-link text-dark ">
+        <a href="#contact" class="nav-link text-dark ">
                   <i class="fa fa-pie-chart mr-3 text-primary fa-fw"></i>
                   Contact
               </a>
@@ -224,7 +224,7 @@
       </div>
   </div>
   <!--Education-->
-  <div class="align-content-center" id="resume">
+  <div class="align-content-center" id="education">
     <div class="container align-text-center">
       <div class="text-container">
         <h1 class="font-weight-bold animated fadeInUp delay-2s">Education</h1>
@@ -308,27 +308,27 @@
         <h4>I ❤ to learn about cultures and languages</h4>
       </div>
     </div>
-      <div class="container" style="padding-bottom: 3%;">
+      <div class="container" style="padding-bottom: 3%; padding-top:2%">
           <div class="row row-flex" style="margin-top:3%;">
-            <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="col-md-3 language-item">
               <div class="content colour-1">
                 <h3 class="font-weight-bold">Spanish</h3>
                 <p>Native Speaker</p>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="col-md-3 language-item">
               <div class="content colour-2">
                 <h3 class="font-weight-bold">English</h3>
                 <p> Near Native Speaker (B2 TOEFL)</p>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="col-md-3 language-item">
               <div class="content colour-3">
                 <h3 class="font-weight-bold">French</h3>
                 <p>A2 DELF</p>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="col-md-3 language-item">
               <div class="content colour-4">
                 <h3 class="font-weight-bold">Mandarin</h3>
                 <p>Basic Communication Skills</p>
@@ -347,7 +347,12 @@
     <div class="parallax2">
       <div class="row h-100" style="margin-top: auto;
       margin-bottom: auto;">
-        <div class="col-sm-4 h-100">
+        <div class="col-sm-4 h-100 v-center">
+          <h1 class="v-center text-center" style="margin-left: 5rem;">
+            <p style="color: white;" class="font-weight-bold">JR. Full Stack Developer</p>
+
+          </h1>
+          
         </div>
         <div class="col-sm-8 ">
           <!--Card-->
@@ -355,10 +360,10 @@
             <!--Card content-->
             <div class="card-body">
               <!--Title-->
-              <h4 class="card-title font-weight-bold mb-2">The Document You Where Looking For</h4>
+              <h4 class="card-title font-weight-bold mb-2">The Document <a style="color: white;">You</a> Where Looking For🔎</h4>
             </div>
             <div class="container">
-              <button type="button" class="btn btn-primary btn-lg;padding:15%"><a><i class="fa fa-address-book"style="margin-right_5%"></i>Download</a></button>
+              <button type="button" class="btn btn-primary btn-lg;padding:15%" onclick="window.open('./docs/Juan_Carlos_Garfias_Tovar CV.pdf')"><a><i class="fa fa-file-text"></i> Download</a></button>
             </div>
           </div>
           <!--/.Card-->
@@ -367,6 +372,13 @@
     </div>
   </div>
   <!--Contact-->
+  <div class="not-first align-content-center" id="contact">
+    <div class="container align-text-center" >
+      <div class="text-container2">
+        <h1 class="font-weight-bold animated fadeInUp delay-2s">-</h1>
+      </div>  
+    </div>
+  </div>
   <!--Footer-->
   <div class="not-first align-content-center" id="myFooter" style="background-color:#F2F2F2; bottom: 0px;">
       <div class="container " style="padding-top: 3%;">
@@ -466,6 +478,8 @@
         autoPlay: 1000
       });
     });
+    //Spining text
+
     //smooth scroll
     var scroll = new SmoothScroll('a[href*="#about"]');
     var scroll = new SmoothScroll('a[href*="#skills"]');

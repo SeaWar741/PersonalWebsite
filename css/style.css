@@ -305,3 +305,32 @@
   transform: translatey(-50%);
   top: 50%;
 }
+.v-slider-frame {
+  border: 1px solid #4BB3FD;
+  height: 50px;
+  overflow: hidden;
+  text-align: center;
+}
+ul.v-slides {
+  list-style-type: none;
+  transform: translateY(50px);
+  padding:0;
+}
+.v-slide {
+  font-size: 24px;
+  line-height: 50px;
+  color: #4BB3FD;
+}
+#contact{
+  background-color: rgb(255, 255, 255);
+  margin-left: 15rem;
+}
+#education{
+  background-color: rgb(255, 255, 255);
+  margin-left: 15rem;
+}
+.language-item{
+  margin: 0%;
+
+}
+
