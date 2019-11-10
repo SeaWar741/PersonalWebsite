@@ -285,3 +285,23 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.parallax2{
+  /* The image used */
+  margin-right: 12rem;
+  margin-left: 12rem;
+  background-image: url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1307&q=80");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.v-center {
+  position: relative;
+  transform: translatey(-50%);
+  top: 50%;
+}
