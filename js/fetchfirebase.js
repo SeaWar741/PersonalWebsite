@@ -23,7 +23,7 @@
         console.log("Intentando append a")
         console.log(Proyectos)
         // Recorremos los productos y los mostramos
-        var name,image,languages,description,counter;
+        var name,image,languages,description,link,counter;
         counter =0;
         $.each(Proyectos, function(indice,valor){
             if(counter>0){
@@ -38,6 +38,7 @@
                 }
                 languages = valor.Language;
                 description = valor.Description;
+                link = valor.Link;
                 }
                 console.log(name)
                 console.log(image)
@@ -45,7 +46,7 @@
                 console.log(description)
                 var itemcarousel='<div class="item h-100">';
                     itemcarousel+='<div class="container project-card h-100">';
-                        itemcarousel+='<div class="card  h-100" >';
+                        itemcarousel+='<div class="card  h-100" style="box-shadow: 0 0px 0px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22) !important;">';
                             itemcarousel+='<div class="view overlay">'
                                 itemcarousel+='<img class="card-img-top" src="';
                             itemcarousel+=image;
@@ -70,7 +71,9 @@
                             itemcarousel+=description;
                         itemcarousel+='</h5></p>'
                         itemcarousel+='</div>'
-                        itemcarousel+='<a href="#" class="btn btn-primary"><i class="fa fa-github"></i> Github</a>'
+                        itemcarousel+='<a href="'
+                        itemcarousel+= Link;
+                        itemcarousel+= 'class="btn btn-primary"><i class="fa fa-github"></i> Github</a>';
                         itemcarousel+='</div>'
                         itemcarousel+='</div>'
                         itemcarousel+='</div>'
