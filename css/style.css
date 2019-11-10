@@ -186,7 +186,7 @@
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22) !important; 
 }
 #skills-text{
-  color: azure;
+  color: rgb(255, 255, 255);
   padding-top: 5rem;
 }
 #resume{
@@ -199,7 +199,7 @@
   padding-bottom:5%;
 }
 .text-container2{
-  padding-top: 5%;
+  padding-top: 0;
   padding-bottom:2%;
 }
 #proyects{
@@ -222,4 +222,66 @@
 }
 .project-subtitle{
   padding-top:4%;
+}
+
+#owl-carousel2 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.owl-item{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto !important;
+}
+.card-item{
+  height: 45rem !important;
+}
+#languages{
+  background-color: rgb(255, 255, 255);
+  margin-left: 15rem;
+}
+#myFooter{
+  margin-left: 15rem;
+}
+#myFooter a:link{
+  font-weight: bold;
+  text-decoration: none;
+  color: #0078D7;
+  text-decoration: none;
+  
+  display: inline-block;
+  position: relative;
+}
+#myFooter a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #0078D7;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#myFooter a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+#footer-copyright{
+  margin-left: 15rem;
+}
+
+.item-btn{
+  position:absolute;    /*added*/
+  bottom:10px;          /*added*/
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

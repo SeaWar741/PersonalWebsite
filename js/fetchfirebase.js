@@ -17,11 +17,10 @@
 
     var Proyectos={};
 
-    firebase.database().ref('Proyectos').once('value', function(datos)
-    {
+    firebase.database().ref('Proyectos').once('value', function(datos){
         Proyectos=datos.val();
-        console.log("Intentando append a")
-        console.log(Proyectos)
+        //console.log("Intentando append a")
+        //console.log(Proyectos)
         // Recorremos los productos y los mostramos
         var name,image,languages,description,link,counter;
         counter =0;
@@ -40,13 +39,13 @@
                 description = valor.Description;
                 link = valor.Link;
                 }
-                console.log(name)
-                console.log(image)
-                console.log(languages)
-                console.log(description)
-                var itemcarousel='<div class="item h-100">';
-                    itemcarousel+='<div class="container project-card h-100">';
-                        itemcarousel+='<div class="card  h-100" style="box-shadow: 0 0px 0px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22) !important;">';
+                //console.log(name)
+                //console.log(image)
+                //console.log(languages)
+                //console.log(description)
+                var itemcarousel='<div class="item">';
+                    itemcarousel+='<div class="container project-card">';
+                        itemcarousel+='<div class="card  card-item" style="box-shadow: 0 0px 0px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22) !important;">';
                             itemcarousel+='<div class="view overlay">'
                                 itemcarousel+='<img class="card-img-top" src="';
                             itemcarousel+=image;
@@ -72,13 +71,13 @@
                         itemcarousel+='</h5></p>'
                         itemcarousel+='</div>'
                         itemcarousel+='<a href="'
-                        itemcarousel+= Link;
-                        itemcarousel+= 'class="btn btn-primary"><i class="fa fa-github"></i> Github</a>';
+                        itemcarousel+= link;
+                        itemcarousel+= '"class="btn btn-primary item-btn"><i class="fa fa-github"></i> Github</a>';
                         itemcarousel+='</div>'
                         itemcarousel+='</div>'
                         itemcarousel+='</div>'
                         itemcarousel+='</div> ';
-                    console.log(itemcarousel)
+                    //console.log(itemcarousel)
                     //$(itemcarousel).appendTo('#owl-carousel2');
                     $('#owl-carousel2').trigger('add.owl.carousel', itemcarousel)
             };
@@ -88,3 +87,4 @@
     },function(objetoError){
         console.log('Error de lectura:'+objetoError.code);
     });
+
