@@ -1,230 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Juan Carlos Garfias Tovar</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <!-- Fluent Design Bootstrap -->
-  <link rel="stylesheet" href="./css/fluent.css">
-  <!-- Micon icons-->
-  <link rel="stylesheet" href="./css/micon.min.css">
-  <!--Custom style -->
-  <link rel="stylesheet" href="./css/style.css">
-  <!--AOS-->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!--Owl carousel-->
-  <link rel="stylesheet" href="./css/owl.carousel.min.css">
-  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-  <!--Animate Css-->
-  <link rel="stylesheet" href="./css/animate.css">
-  <!--Font Awesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
+  <!--slick carousel-->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <!--Fonts-->
+  
 </head>
-
 <body>
-  <!-- Start your project here-->
-  <!-- Vertical navbar -->
-  <div class="vertical-nav acrylic" id="sidebar" data-aos="fade-right" data-aos-duration ="1200">
-    <div class="py-4 px-3 mb-4">
-      <div class="media d-flex align-items-center">
-        <img src="./img/logos/thelogo.png" width="70" class="mr-3 rounded-circle shadow-lg">
-        <div class="media-body">
-          <h4 class="font-weight-bold">Juan Carlos Garfias Tovar</h4>
-          <p class="font-weight-light mb-0">Computer Science Student</p>
-        </div>
-      </div>
-    </div>
 
-
-    <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Description</p>
-    <ul class="nav flex-column bg-white mb-0">
-      <li class="nav-item ripple">
-        <a href="#about" class="nav-link text-dark ">
-                  <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
-                  About
-              </a>
-      </li>
-      <li class="nav-item ripple">
-        <a href="#skills" class="nav-link text-dark ">
-                  <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
-                  Skills
-              </a>
-      </li>
-      <li class="nav-item ripple">
-        <a href="#education" class="nav-link text-dark">
-                  <i class="fa fa-graduation-cap mr-3 text-primary fa-fw"></i>
-                  Education
-              </a>
-      </li>
+  <!-- Start your project here-->  
+  <div class="uk-position-relative">
+    <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('https://images.unsplash.com/photo-1519335337423-a3357c2cd12e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1936&q=80');">
       
-    </ul>
+      <h2 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical"><p class="font-weight-bold">Computer Science Student</p></h2>
+  
+    </div>
+    <div class="uk-position-top">
+      <nav class="uk-navbar-container acrylicTop" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
 
-    <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Experience</p>
-
-    <ul class="nav flex-column bg-white mb-0">
-        <li class="nav-item ripple">
-            <a href="#proyects" class="nav-link text-dark">
-                  <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
-                      Projects
-                  </a>
-          </li>
-      <li class="nav-item ripple">
-        <a href="#languages" class="nav-link text-dark ">
-                  <i class="fa fa-globe mr-3 text-primary fa-fw"></i>
-                  Languages
-              </a>
-      </li>
-      <li class="nav-item ripple">
-        <a href="#resume" class="nav-link text-dark ">
-                  <i class="fa fa-user-circle mr-3 text-primary fa-fw"></i>
-                  Resume
-              </a>
-      </li>
-      <li class="nav-item ripple">
-        <a href="#contact" class="nav-link text-dark ">
-                  <i class="fa fa-envelope mr-3 text-primary fa-fw"></i>
-                  Contact
-              </a>
-      </li>
-    </ul>
-  </div>
-  <!-- End vertical navbar -->
-  <div class="page-content"id="about">
-    <!--About-->
-    <div class="container" style="height:100vh;margin-top:5rem;" data-aos="zoom-out" data-aos-delay="1200">
-      <div class="card grow">
-        <div class="row align-items-center">
-          <div class="col-lg-6 order-lg-2">
-            <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/logos/user.png" alt="">
-            </div>
-          </div>
-          <div class="col-lg-6 order-lg-1">
-            <div class="p-5">
-              <h2 class="display-4">Developer Information</h2>
-              I´m a 19yr old guy who loves computers and graphic design.
-                I’ve been working with PC’s since I was a child. I’ve always 
-                felt passion towards learning new things and decided to learn 
-                and understand more than the average people do about computers.
-                I began formally coding in 2017 at Codeacamp with Ruby on Rails.
-                <br><br>
-                I’m in collage at Tecnológico de Monterrey Campus Monterrey, studying Computer Science (Ingenieria en tecnologias
-                computacionales).
-                <br><br>
-                I’ve participated in several student groups such as Taman Keet 3933 where I worked in the 
-                programming department (Robotics Representative Team of Tecnológico de Monterrey, Campus Santa Fe),
-                Activatec (Events Organization Group at of Tecnológico de Monterrey, Campus Santa Fe) as the group
-                president and in the Audiovisual Production group of Tecnológico de Monterrey, Campus Santa Fe.
-                <br><br>
-                Right now I have a Computer Science Club called <a href="https://ctrl-alt-tec.hackclub.com/">Ctrl+Alt+Tec</a> where we teach people to solve problems,
-                code, be creative and overall make them understand about the current technology and the ones to come.
-                <br><br>
-                I am currently doing alot of personal projects and research in machine learning. I specifically ♥ Python and c++ for these tasks. 
-                I geting more into big data, blockchain, image recognition, neuro science and overall cognitive computing.
-            </div>
-          </div>
+        <div class="uk-navbar-left">
+    
+            <ul class="uk-navbar-nav">
+              <a href="" class="uk-navbar-item uk-logo navItem">Juan Carlos Garfias Tovar</a>
+            </ul>
+    
         </div>
-      </div>
+    
+        <div class="uk-navbar-right">
+    
+            <ul class="uk-navbar-nav">
+                <li>
+                  <a href="#" class="navItem">About me</a>
+                </li>
+                <li>
+                    <a href="#" class="navItem">Parent</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#" class="navItem">Item</a></li>
+            </ul>
+    
+        </div>
+      </nav>
     </div>
   </div>
-  <!--Skills-->
-  <div class="align-content-center parallax1" id="skills">
-      <div class="container tshadow1" id="skills-text" style="text-align:center;">
-        <h1><p class="font-weight-bold" data-aos="fade-up">Technical Skills</p></h1>
-        <h3><p class="font-weight-bold" style="padding-bottom: 2rem;">Git |Firebase|Bootstrap|React Native|Bash</p></h3>
+  <div class="uk-container">
+    <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+      <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            Foto con parallax
+          </div>
       </div>
-      <div class="container">
-        <div class="row" style="margin-bottom: 4rem;">
-          <div class="col-sm grows">
-            <!-- Card -->
-            <div class="card h-100 acrylic" data-aos="zoom-out-up" id="skill-card">
-                <!-- Card image -->
-                <img class="card-img-top1" src="./img/tools-logos/python-logo.png">
-              
-                <!-- Card content -->
-                <div class="card-body align-items-center d-flex justify-content-center">
-              
-                  <!-- Title -->
-                  <h4 class="card-title text-center font-weight-bold"><a>Python</a></h4>
-              
-                </div>
-              
-            </div>
-            <!-- Card -->
+      <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            Descripcion
           </div>
-          <div class="col-sm grows">
-            <!-- Card -->
-            <div class="card h-100 acrylic " data-aos="zoom-out-up" id="skill-card">
-              <!-- Card image -->
-              <img class="card-img-top1" src="./img/tools-logos/java-logo.png" alt="Card image cap">
-            
-              <!-- Card content -->
-              <div class="card-body align-items-center d-flex justify-content-center">
-            
-                <!-- Title -->
-                <h4 class="card-title text-center font-weight-bold"><a>Java</a></h4>
-            
-              </div>
-            
-            </div>
-            <!-- Card -->
-          </div>
-          <div class="col-sm grows">
-            <!-- Card -->
-            <div class="card h-100 acrylic" data-aos="zoom-out-up" id="skill-card">
-              <!-- Card image -->
-              <img class="card-img-top1" src="./img/tools-logos/web-logo.png" alt="Card image cap">
-            
-              <!-- Card content -->
-              <div class="card-body align-items-center d-flex justify-content-center">
-            
-                <!-- Title -->
-                <h4 class="card-title text-center font-weight-bold"><a>Web development</a></h4>
-            
-              </div>
-            
-            </div>
-            <!-- Card -->
-          </div>
-          <div class="col-sm grows">
-              <!-- Card -->
-              <div class="card h-100 acrylic" data-aos="zoom-out-up" id="skill-card">
-                  <!-- Card image -->
-                  <img class="card-img-top1" src="./img/tools-logos/cpp-logo.png" alt="Card image cap">
-                
-                  <!-- Card content -->
-                  <div class="card-body align-items-center d-flex justify-content-center">
-                
-                    <!-- Title -->
-                    <h4 class="card-title text-center font-weight-bold"><a>C++</a></h4>
-                
-                  </div>
-                
-                </div>
-              <!-- Card -->
-          </div>
-          <div class="col-sm grows">
-              <!-- Card -->
-              <div class="card h-100 acrylic" data-aos="zoom-out-up" id="skill-card">
-                  <!-- Card image -->
-                  <img class="card-img-top1" src="./img/tools-logos/mysql-logo.png" alt="Card image cap">
-                
-                  <!-- Card content -->
-                  <div class="card-body align-items-center d-flex justify-content-center">
-                
-                    <!-- Title -->
-                    <h4 class="card-title text-center font-weight-bold"><a>Databases</a></h4>
-                  </div>
-                
-                </div>
-              <!-- Card -->
-          </div>
-        </div>
       </div>
+  </div>
   </div>
   <!--Education-->
   <div class=" not-first align-content-center" id="education">
@@ -232,60 +87,46 @@
       <div class="text-container">
         <h1 class="font-weight-bold animated fadeInUp delay-2s">Education</h1>
       </div>
-      <div class="owl-carousel owl-theme owl-loaded" style="padding-bottom: 5%;" id="owl-carousel"> 
-        <div class="owl-stage-outer">
-            <div class="owl-stage">
-                <div class="owl-item">
-                  <div class="view">
-                    <img class="d-block w-100" src="./img/education/tec.png"
-                      alt="First slide">
-                    <div class="mask rgba-black-light"></div>
-                  </div>
-                  <div class="carousel-caption">
-                    <h3 class="h1-responsive font-weight-bold">B.S Computer Science</h3>
-                    <p>Tecnológico de Monterrey Campus Monterrey</p>
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
+
+        <ul class="uk-slideshow-items">
+            <li>
+                <<img class="d-block w-100" src="./img/education/tec.png" uk-cover>
+                <div class="uk-position-center uk-position-small uk-text-center">
+                    <h2 uk-slideshow-parallax="x: 100,-100">B.S Computer Science</h2>
+                    <p uk-slideshow-parallax="x: 200,-200">Tecnológico de Monterrey Campus Monterrey</p>
                     <button type="button" class="btn btn-primary btn-sm" onclick="window.open('https://tec.mx/es')">Information ></button>
-                  </div>
                 </div>
-                <div class="owl-item">
-                  <div class="view">
-                    <img class="d-block w-100" src="./img/education/santafe.png"
-                      alt="First slide">
-                    <div class="mask rgba-black-light"></div>
-                  </div>
-                  <div class="carousel-caption">
-                    <h3 class="h3-responsive font-weight-bold">International Baccalaureate</h3>
-                    <p>Tecnológico de Monterrey Campus Santa Fe</p>
+            </li>
+            <li>
+                <img class="d-block w-100" src="./img/education/santafe.png" alt="" uk-cover>
+                <div class="uk-position-center uk-position-small uk-text-center">
+                    <h2 uk-slideshow-parallax="x: 100,-100">International Baccalaureate</h2>
+                    <p uk-slideshow-parallax="x: 200,-200">Tecnológico de Monterrey Campus Santa Fe</p>
                     <button type="button" class="btn btn-primary btn-sm" onclick="window.open('https://www.ibo.org/')">Information ></button>
-                  </div>
                 </div>
-                <div class="owl-item">
-                  <div class="view">
-                    <img class="d-block w-100" src="./img/education/codeacamp.png"
-                      alt="First slide">
-                    <div class="mask rgba-black-light"></div>
-                  </div>
-                  <div class="carousel-caption">
-                    <h3 class="h3-responsive font-weight-bold">Full Stack Developer</h3>
-                    <p>CodeaCamp</p>
+            </li>
+            <li>
+                <img class="d-block w-100" src="./img/education/codeacamp.png" uk-cover>
+                <div class="uk-position-center uk-position-small uk-text-center">
+                    <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Full Stack Developer</h2>
+                    <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">CodeaCamp</p>
                     <button type="button" class="btn btn-primary btn-sm" onclick="window.open('https://www.facebook.com/codeacamp')">Information ></button>
-                  </div>
                 </div>
-                <div class="owl-item">
-                  <div class="view">
-                    <img class="d-block w-100" src="./img/education/escena.png"
-                      alt="First slide">
-                    <div class="mask rgba-black-light"></div>
-                  </div>
-                  <div class="carousel-caption">
-                    <h3 class="h3-responsive font-weight-bold">3D Modeling Courses</h3>
-                    <p>Escena</p>
-                    <button type="button" class="btn btn-primary btn-sm" onclick="window.open('http://www.escuelaescena.com/')">Information ></button>
-                  </div>
-                </div>
-            </div>
-        </div>
-    </div>
+            </li>
+            <li>
+              <img class="d-block w-100" src="./img/education/escena.png" uk-cover>
+              <div class="uk-position-center uk-position-small uk-text-center">
+                  <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">3D Modeling Courses</h2>
+                  <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Escena</p>
+                  <button type="button" class="btn btn-primary btn-sm" onclick="window.open('http://www.escuelaescena.com/')">Information ></button>
+              </div>
+          </li>
+        </ul>
+    
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+      </div>
     </div>    
   </div>
   <!--Proyects-->
@@ -301,244 +142,24 @@
     <div class="owl-carousel" style="padding-top: 2rem;padding-bottom: 2rem; padding-left: 12rem;padding-right:12rem; display:flex;flex-wrap:wrap;" id="owl-carousel2">
     </div>  
   </div>
-  <!--Languages-->
-  <div class="not-first align-content-center" id="languages">
-    <div class="container align-text-center" >
-      <div class="text-container2">
-        <h1 class="font-weight-bold animated fadeInUp delay-2s">Languages</h1>
-      </div>  
-      <div>
-        <h4>I ❤ to learn about cultures and languages</h4>
-      </div>
-    </div>
-      <div class="container" style="padding-bottom: 3%; padding-top:2%">
-          <div class="row row-flex" style="margin-top:3%;">
-            <div class="col-md-3 language-item">
-              <div class="content colour-1">
-                <h3 class="font-weight-bold">Spanish</h3>
-                <p>Native Speaker</p>
-              </div>
-            </div>
-            <div class="col-md-3 language-item">
-              <div class="content colour-2">
-                <h3 class="font-weight-bold">English</h3>
-                <p> Near Native Speaker (B2 TOEFL)</p>
-              </div>
-            </div>
-            <div class="col-md-3 language-item">
-              <div class="content colour-3">
-                <h3 class="font-weight-bold">French</h3>
-                <p>A2 DELF</p>
-              </div>
-            </div>
-            <div class="col-md-3 language-item">
-              <div class="content colour-4">
-                <h3 class="font-weight-bold">Mandarin</h3>
-                <p>Basic Communication Skills</p>
-              </div>
-            </div>
-          </div>        
-        </div>
-  </div>
-  <!--Resume-->
-  <div class="not-first align-content-center" id="resume">
-    <div class="container align-text-center" >
-      <div class="text-container2">
-        <h1 class="font-weight-bold animated fadeInUp delay-2s">Resume</h1>
-      </div>  
-    </div>
-    <div class="parallax2">
-      <div class="row h-100" style="margin-top: auto;
-      margin-bottom: auto;">
-        <div class="col-sm-4 h-100 v-center">
-          <h1 class="v-center text-center" style="margin-left: 5rem;">
-            <p style="color: white;" class="font-weight-bold">JR. Full Stack Developer</p>
+  
+  <!-- End your project here-->
 
-          </h1>
-          
-        </div>
-        <div class="col-sm-8 ">
-          <!--Card-->
-          <div class="card acrylic v-center text-right" style="padding: 2rem; margin-left:25%;margin-right:3%">
-            <!--Card content-->
-            <div class="card-body">
-              <!--Title-->
-              <h4 class="card-title font-weight-bold mb-2">The Document <a style="color: white;">You</a> are Looking For🔎</h4>
-            </div>
-            <div class="container">
-              <button type="button" class="btn btn-primary btn-lg;padding:15%" onclick="window.open('./docs/Juan_Carlos_Garfias_Tovar CV.pdf')"><a><i class="fa fa-file-text"></i> Download</a></button>
-            </div>
-          </div>
-          <!--/.Card-->
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Contact-->
-  <div class="not-first align-content-center" id="contact">
-    <div class="container align-text-center" >
-      <div class="text-container2">
-        <h1 class="font-weight-bold animated fadeInUp delay-2s">Contact me</h1>
-      </div>  
-      <div>
-        <row>  
-          <div class="col-sm-4">
-            <h3>Social Media</h3>
-            <div class="containerc">
-                <div style="width: 18rem;">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a href="https://www.linkedin.com/in/juan-carlos-garfias-tovar-050770152/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li class="list-group-item"><a href="https://github.com/SeaWar741"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                        <li class="list-group-item"><a href="https://twitter.com/seawar741"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li class="list-group-item"><a href="https://www.instagram.com/juancagarfias/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <div style="clear: both;"></div>
-                      </ul>
-                </div>
-            </div>
-          </div>
-          <div class="col-sm-8 ">
-            HERE GOES CONTACT FORM
-          </div>
-        </row>
-      </div>
-    </div>
-  </div>
-  <!--Footer-->
-  <div class="not-first align-content-center" id="myFooter" style="background-color:#F2F2F2; bottom: 0px;">
-      <div class="container " style="padding-top: 3%;">
-          <div class="row">
-              <div class="col-sm-3">
-                  <h3 class="logo font-weight-bold"><a href="#"> Juan Carlos Garfias Tovar </a></h3>
-              </div>
-              <div class="col-sm-2">
-                  <h5 class="font-weight-bold">About</h5>
-                  <ul>
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">SeaWar741</a></li>
-                      <li><a href="https://juancarlosgarfiascas.wordpress.com">Personal Blog</a></li>
-                  </ul>
-              </div>
-              <div class="col-sm-2">
-              </div>
-              <div class="col-sm-2">
-                  <h5 class="font-weight-bold">Support</h5>
-                  <ul>
-                      <li><a href="legal.html">Legal Notice</a></li>
-                      <li><a href="">Splashplayer</a></li>
-                      <li><a href="https://github.com/SeaWar741/PersonalWebsite">Website Repository</a></li>
-                  </ul>
-              </div>
-              <div class="col-sm-3">
-                  <div class="social-networks">
-                      <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:juanca741&size=detail&theme=light&show-count=0" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
-                  </div>
-              </div>
-          </div>
-          <div class="footer-copyright text-center" style="padding-bottom: 3%;padding-top:2%">
-              <a class="font-weight-bold">Juan Carlos Garfias Tovar © SeaWar741. 2020 • All rights reserved.</a>
-          </div>
-      </div>
-      
-  </div>
-  <!-- /Start your project here-->
-
-  <!-- Scripts -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="./js/popper.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-  <!--Button effect-->
-  <script src="js/jquery.pointlight.js"></script>
-  <!--AOS-->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!--SmoothScroll-->
-  <script src="js/smooth-scroll.js"></script>
-  <!--Owl Carousel-->
-  <script src="./js/owl.carousel.min.js"></script>
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
-  <script src="js/fetchfirebase.js"></script>
-  <script type="text/javascript">
-    //Background
-    $(document).ready(function() {
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
+  <!--Slick carousel-->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
 
-      var bgArray = ['1.jpg', '2.jpg', '3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg'];
-      var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
-      document.body.style.backgroundImage= 'url(' +"img/background/"+ bg + ')';
-    }); 
-    //AOS Animations
-     AOS.init({
-      duration: 550, // values from 0 to 3000, with step 50ms
-     });
-     //Border effect fluent
-     $(document).ready(function () {
-        $('.nav-item').pointLight({
-          bg_innerColor: "rgba(255, 255, 255, 0.5)",
-          bg_outerColor: "transparent",
-          border_innerColor: "#fff",
-          border_outerColor: "#fff"
-        });
-        
-    });
-    //Carousel
-    $(document).ready(function(){
-      $("#owl-carousel").owlCarousel({
-        items: 1,
-        singleItem: true,
-        loop: true,
-        responsiveRefreshRate:60,
-        autoPlay: 1000
-      });
-      $("#owl-carousel2").owlCarousel({
-        loop: true,
-        margin: 30,
-        dots: true,
-        nav: false,
-        responsiveClass: true,
-        responsiveRefreshRate:60,
-        autoPlay: 1000
-      });
-    });
-    //Spining text
-
-    //smooth scroll
-    var scroll = new SmoothScroll('a[href*="#about"]');
-    var scroll = new SmoothScroll('a[href*="#skills"]');
-    var scroll = new SmoothScroll('a[href*="#resume"]');
-    var scroll = new SmoothScroll('a[href*="#projects"]');
-    var scroll = new SmoothScroll('a[href*="#contact"]');
-    var scroll = new SmoothScroll('a[href*="#"]');
-    //github query REST API
-    var request = new XMLHttpRequest()
-    request.open('GET', 'https://api.github.com/users/seawar741/repos', true)
-    request.onload = function() {
-      // Begin accessing JSON data here
-      var data = JSON.parse(this.response)
-      languages = new Array();
-      counter = 0;
-      if (request.status >= 200 && request.status < 400) {
-        console.log(data)
-        data.forEach(Object => {
-          console.log(Object.name);
-          console.log(Object.language)
-          languages[counter] = Object.language;
-          counter++
-        })
-        console.log(languages);
-        setOcc = new Set(languages)
-        arrOcc = [...setOcc]
-        arrNumberOcc = arrOcc.map(occ => languages.filter(e => e===occ).length);
-        console.log(arrOcc, arrNumberOcc)
-      } else {
-        console.log('error')
-      }
-    }
-
-    request.send();
-  </script>
 </body>
-
 </html>
