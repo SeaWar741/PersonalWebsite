@@ -52,3 +52,9 @@
 .card-body-new{
     padding: 20px 20px !important;
 }
+#footer{
+    margin-top: 10rem;
+}
+#back{
+    height: 100vh !important;
+}

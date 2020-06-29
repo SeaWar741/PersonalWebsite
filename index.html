@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="icon" type="image/png" href="img/logos/logo.png"/>
+        <link rel="icon" type="image/png" href="img/logos/favicon.png"/>
 
         <link rel="stylesheet" href="css/uikit.min.css" />
         <link rel="stylesheet" href="css/style.css" />
@@ -15,10 +15,19 @@
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.min.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+        <!-- JQuery -->
+        <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+        <script src="js/fetchfirebase.js"></script>
+        <!--MorphText-->
+        <link rel="stylesheet" href="css/morphext.css">
+        <script src="js/morphext.min.js"></script>
     </head>
     <body>
-        <div class="uk-position-relative">
-            <img src="img/background/4.jpg" alt="background" id="top">
+        <div class="uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(img/background/4.jpg);" id="back">
+            <span id="js-rotating"> Computer Science Student, Machine Learning Enthusiast,Junior Fullstack Developer, Leader, Innovator, Entrepreneur</span>
             <div class="uk-position-top">
                 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
                     <nav class="uk-navbar-container uk-navbar-transparent uk-dark acrylic" uk-navbar>
@@ -98,7 +107,7 @@
                 <div class="uk-height-large uk-background-cover uk-flex" uk-parallax="bgy: -200" style="background-image: url('img/background/9.jpg');">
                     <div class="uk-text-center uk-margin-auto uk-margin-auto-vertical">
                         <div class="uk-container">
-                            <div class="uk-grid-match uk-child-width-expand@s uk-text-center" uk-grid>
+                            <div class="uk-child-width-1-4@s uk-grid-match uk-flex-center uk-text-center" uk-grid>
                                 <div>
                                     <div class="uk-card uk-card-default uk-card-hover uk-card-body">
                                         <i class="fa fa-cogs" aria-hidden="true"></i>
@@ -245,12 +254,105 @@
 
             <div class="uk-container uk-container-large sections-web" id="Projects">
                 <h1 class="uk-heading-large uk-text-bolder">Projects.</h1>
+                <div uk-slider="center: true;autoplay:true;autoplay-interval:3000">
+                    <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1">
+                
+                        <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid uk-grid-match" id="projects-carousel">
+                            <li id="delete-me">
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Headline</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div id="controls">
+                           
+                        </div>
+                    </div>
+                
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                
+                </div>
             </div>
 
             <div class="uk-container uk-container-large sections-web" id="ContactMe">
                 <h1 class="uk-heading-large uk-text-bolder">Contact me.</h1>
+                <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h1 class="uk-heading-small ">Social Networks</h1>
+                            <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match uk-flex-center uk-text-center" uk-grid>
+                                <div>
+                                    <div class="uk-card-hover" >
+                                        <div class="uk-height-small uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" uk-parallax="bgy: -200" data-src="img/background/github.png" uk-img>
+                                            <h3><i class="fa fa-github" aria-hidden="true"></i> Github</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-card-hover" >
+                                        <div class="uk-height-small uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" uk-parallax="bgy: -200" data-src="img/background/linkedin.png" uk-img>
+                                            <h3><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-card-hover" >
+                                        <div class="uk-height-small uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" uk-parallax="bgy: -200" data-src="img/background/twitter.png" uk-img>
+                                            <h3><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-card-hover" >
+                                        <div class="uk-height-small uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" uk-parallax="bgy: -200" data-src="img/background/instagram.jpg" uk-img>
+                                            <h3><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-card-hover" >
+                                        <div class="uk-height-small uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" uk-parallax="bgy: -200" data-src="img/background/spotify.png" uk-img>
+                                            <h3><i class="fa fa-spotify" aria-hidden="true"></i> Spotify</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h1 class="uk-heading-small ">Email me</h1>
+                            <form class="uk-form-stacked" action="https://formspree.io/mayyeqnl" method="POST">
+                                <div class="uk-margin">
+                                    <label class="uk-form-label" for="form-stacked-text">Name(s):</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" id="form-stacked-text" type="name" placeholder="Awesome person" name="name">
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label" for="form-stacked-text">Email:</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" id="form-stacked-text" type="email" placeholder="you@awesome.com" name="email">
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label" for="form-stacked-text">Message:</label>
+                                    <textarea class="uk-textarea" rows="5" placeholder="Your message..." name="message"></textarea>
+                                </div>
+                                <button class="uk-button uk-button-primary" type="submit">Send</button>
+                            
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-
             <!-- This is an anchor toggling the modal -->
             <div class="ghost">
                 <a href="#modal-machineLearning" uk-toggle>Open</a>
@@ -394,6 +496,10 @@
                 </div>
             </div>
         </div>
+        <div class="uk-section uk-section-secondary uk-text-center" id="footer">
+                <p>Made with ❤ by Juan Carlos Garfias Tovar </p>
+                <script type="text/javascript"> document.write("Copyright "+ new Date().getFullYear()); </script>
+        </div>
         <!-- Other-->
         <div id="modal-Other" uk-modal>
             <div class="uk-modal-dialog uk-modal-body">
@@ -443,5 +549,18 @@
                 </div>
             </div>
         </div>
+        <script>
+            $("#js-rotating").Morphext({
+                // The [in] animation type. Refer to Animate.css for a list of available animations.
+                animation: "fadein",
+                // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+                separator: ",",
+                // The delay between the changing of each phrase in milliseconds.
+                speed: 2000,
+                complete: function () {
+                    // Called after the entrance animation is executed.
+                }
+            });
+        </script>
     </body>
 </html> 
