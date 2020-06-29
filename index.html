@@ -26,8 +26,18 @@
         <script src="js/morphext.min.js"></script>
     </head>
     <body>
-        <div class="uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(img/background/4.jpg);" id="back">
-            <span id="js-rotating"> Computer Science Student, Machine Learning Enthusiast,Junior Fullstack Developer, Leader, Innovator, Entrepreneur</span>
+        <div class="uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle uk-text-center " uk-parallax="bgy: -100" style="background-image: url(img/background/3.png);" id="back">
+            
+            <h1 class="uk-light">
+                <p class="uk-text-bolder" style="font-size: 40hv !important;color: aliceblue !important;">
+                    Juan Carlos Garfias Tovar
+                </p>
+                <hr class="uk-divider-icon">
+                <span id="js-rotating" uk-parallax="opacity: 1,0; y: 100,0; viewport: 0.5">
+                    Computer Science Student, Machine Learning Enthusiast,Junior Fullstack Developer, Leader, Innovator, Entrepreneur
+                </span>
+                <br>
+            </h1>
             <div class="uk-position-top">
                 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
                     <nav class="uk-navbar-container uk-navbar-transparent uk-dark acrylic" uk-navbar>
@@ -63,14 +73,14 @@
                 </div>
             </div>
         </div>
-        <div class="body-web">
+        <div id="body-web">
             <!--Sections-->
             <div class="uk-container uk-container-large sections-web1" id="AboutMe">
-                <h1 class="uk-heading-large uk-text-bolder">About me.</h1>
+                <<h1 class="uk-heading-large uk-text-bolder" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">About me.</h1>
                 <div class="uk-grid-large uk-child-width-expand@s" uk-grid>
                     <div>
                         <div>
-                            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                            <div class="uk-card uk-card-default uk-card-hover uk-card-body" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false">
                                 <h3 class="uk-card-title">Computer Science Student</h3>
                                 I love computers and graphic design.
                                 I’ve been working with PC’s since I was a child. I’ve always 
@@ -96,17 +106,17 @@
                     </div>
                     <div>
                         <div class="uk-card uk-card-body">
-                            <img data-src="img/logos/me.png" width="1800" height="1200" alt="Me" uk-img id="myPhoto">
+                            <img data-src="img/logos/me.png" width="1800" height="1200" alt="Me" uk-img id="myPhoto" uk-scrollspy="cls: uk-animation-fade; repeat: true">
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="uk-container uk-container-large sections-web" id="Skills">
-                <h1 class="uk-heading-large uk-text-bolder">Skills.</h1>
-                <div class="uk-height-large uk-background-cover uk-flex" uk-parallax="bgy: -200" style="background-image: url('img/background/9.jpg');">
+                <h1 class="uk-heading-large uk-text-bolder" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">Skills.</h1>
+                <div class="uk-height-large uk-background-cover uk-flex" uk-parallax="bgy: -150" style="background-image: url('img/background/2.png');">
                     <div class="uk-text-center uk-margin-auto uk-margin-auto-vertical">
-                        <div class="uk-container">
+                        <div class="uk-container" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false">
                             <div class="uk-child-width-1-4@s uk-grid-match uk-flex-center uk-text-center" uk-grid>
                                 <div>
                                     <div class="uk-card uk-card-default uk-card-hover uk-card-body">
@@ -158,7 +168,7 @@
             </div>
 
             <div class="uk-container uk-container-large sections-web" id="Education">
-                <h1 class="uk-heading-large uk-text-bolder">Education.</h1>
+                <h1 class="uk-heading-large uk-text-bolder" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">Education.</h1>
                 <div class="uk-position-relative uk-visible-toggle " tabindex="-1" uk-slideshow="min-height: 300; max-height: 500; animation: push">
 
                     <ul class="uk-slideshow-items">
@@ -253,7 +263,7 @@
             </div>
 
             <div class="uk-container uk-container-large sections-web" id="Projects">
-                <h1 class="uk-heading-large uk-text-bolder">Projects.</h1>
+                <h1 class="uk-heading-large uk-text-bolder" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">Projects.</h1>
                 <div uk-slider="center: true;autoplay:true;autoplay-interval:3000">
                     <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1">
                 
@@ -281,42 +291,42 @@
             </div>
 
             <div class="uk-container uk-container-large sections-web" id="ContactMe">
-                <h1 class="uk-heading-large uk-text-bolder">Contact me.</h1>
+                <h1 class="uk-heading-large uk-text-bolder" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">Contact me.</h1>
                 <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
                             <h1 class="uk-heading-small ">Social Networks</h1>
                             <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match uk-flex-center uk-text-center" uk-grid>
                                 <div>
-                                    <div class="uk-card-hover" >
+                                    <div class="uk-card-hover" style="cursor: pointer;" onclick="window.open('https://github.com/SeaWar741','mywindow');">
                                         <div class="uk-height-small uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" uk-parallax="bgy: -200" data-src="img/background/github.png" uk-img>
                                             <h3><i class="fa fa-github" aria-hidden="true"></i> Github</h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="uk-card-hover" >
+                                    <div class="uk-card-hover" style="cursor: pointer;" onclick="window.open('https://www.linkedin.com/in/juancarlosgarfiastovar/','mywindow');">
                                         <div class="uk-height-small uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" uk-parallax="bgy: -200" data-src="img/background/linkedin.png" uk-img>
-                                            <h3><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</h3>
+                                            <h3 href=""><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="uk-card-hover" >
+                                    <div class="uk-card-hover" style="cursor: pointer;" onclick="window.open('https://twitter.com/JuancaGarfias','mywindow');">
                                         <div class="uk-height-small uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" uk-parallax="bgy: -200" data-src="img/background/twitter.png" uk-img>
                                             <h3><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="uk-card-hover" >
+                                    <div class="uk-card-hover" style="cursor: pointer;" onclick="window.open('https://www.instagram.com/juancagarfias','mywindow');">
                                         <div class="uk-height-small uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" uk-parallax="bgy: -200" data-src="img/background/instagram.jpg" uk-img>
                                             <h3><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="uk-card-hover" >
+                                    <div class="uk-card-hover" style="cursor: pointer;" onclick="window.open('https://open.spotify.com/user/juanca741?si=_1HD97vATvOSiw9jGVU3Uw','mywindow');">
                                         <div class="uk-height-small uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" uk-parallax="bgy: -200" data-src="img/background/spotify.png" uk-img>
                                             <h3><i class="fa fa-spotify" aria-hidden="true"></i> Spotify</h3>
                                         </div>
@@ -556,11 +566,32 @@
                 // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
                 separator: ",",
                 // The delay between the changing of each phrase in milliseconds.
-                speed: 2000,
+                speed: 5000,
                 complete: function () {
                     // Called after the entrance animation is executed.
                 }
             });
+            var isMobile = false; //initiate as false
+            // device detection
+            if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) 
+                || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0,4))) { 
+                isMobile = true;
+            }
+            if(window.innerHeight > window.innerWidth){
+                isMobile = true;
+            }
+            if(window.innerHeight < window.innerWidth){
+                isMobile = false;
+            }
+            if(isMobile){
+                document.getElementById("body-web").style.marginLeft = "0rem";
+                document.getElementById("body-web").style.marginRight = "0rem";
+                console.log("Mobile")
+            }
+            if(!isMobile){
+                document.getElementById("body-web").style.marginLeft = "5rem";
+                document.getElementById("body-web").style.marginRight = "5rem";
+            }
         </script>
     </body>
 </html> 

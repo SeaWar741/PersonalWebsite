@@ -58,3 +58,6 @@
 #back{
     height: 100vh !important;
 }
+.uk-navbar-nav>li>a {
+    color: black;
+}

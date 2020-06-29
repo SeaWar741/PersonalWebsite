@@ -39,10 +39,10 @@
                 description = valor.Description;
                 link = valor.Link;
                 }
-                console.log(name)
-                console.log(image)
-                console.log(languages)
-                console.log(description)
+                //console.log(name)
+                //console.log(image)
+                //console.log(languages)
+                //console.log(description)
 
                 var itemcarousel='<li>';
                         itemcarousel+='<div class="uk-card uk-card-default">';
@@ -55,13 +55,17 @@
                                 itemcarousel+='<h3 class="uk-card-title">'
                                 itemcarousel+=name;
                                 itemcarousel+='</h3>';
-                                itemcarousel+='<p uk-text-bolde> Languages: <p>';
+                                itemcarousel+='<p uk-text-bold style="color:black;"> Languages & Technologies: <p>';
                                 itemcarousel+=languages
                                 itemcarousel+='</p>';
-                                itemcarousel+='<p> Description: ';
+                                itemcarousel+='<p uk-text-bold style="color:black;"> Description: <p>';
                                 itemcarousel+=description
                                 itemcarousel+='</p>';
-                                itemcarousel+='<button class="uk-button uk-button-primary"><i class="fa fa-angle-right" aria-hidden="true"></i> Information</button>'
+                                itemcarousel+='<button class="uk-button uk-button-primary" valign="bottom" onclick="window.open(';
+                                itemcarousel+="'";
+                                itemcarousel+=link;
+                                itemcarousel+="'";
+                                itemcarousel+=')"><i class="fa fa-angle-right" aria-hidden="true"></i> Information</button>';
                             itemcarousel+='</div>';
                         itemcarousel+='</div>';
                     itemcarousel+='</li>';
