@@ -1,165 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Juan Carlos Garfias Tovar</title>
-  <!-- MDB icon -->
-  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <!-- Google Fonts Roboto -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- Material Design Bootstrap -->
-  <link rel="stylesheet" href="css/mdb.min.css">
-  <!-- UIkit CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
-  <!--slick carousel-->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="css/style.css">
-  <!--Fonts-->
-  
-</head>
-<body>
+<html>
+    <head>
+        <title>Juan Carlos Garfias Tovar</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Start your project here-->  
-  <div class="uk-position-relative">
-    <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('https://images.unsplash.com/photo-1519335337423-a3357c2cd12e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1936&q=80');">
-      
-      <h2 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical"><p class="font-weight-bold">Computer Science Student</p></h2>
-  
-    </div>
-    <div class="uk-position-top">
-      <nav class="uk-navbar-container acrylicTop" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <link rel="icon" type="image/png" href="img/logos/logo.png"/>
 
-        <div class="uk-navbar-left">
-    
-            <ul class="uk-navbar-nav">
-              <a href="" class="uk-navbar-item uk-logo navItem">Juan Carlos Garfias Tovar</a>
-            </ul>
-    
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- Icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+        <div class="uk-position-relative">
+            <img src="img/background/4.jpg" alt="background">
+            <div class="uk-position-top">
+                <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+                    <nav class="uk-navbar-container uk-navbar-transparent uk-dark acrylic" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <ul class="uk-navbar-nav">
+                                <li>
+                                    <a class="uk-navbar-item uk-logo" href="#">
+                                        <img data-src="img/logos/logo.png" width="128px" height="128px" alt="" uk-img>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="uk-navbar-right">
+                            <ul class="uk-navbar-nav">
+                                <li>
+                                    <a href="#">About me</a>
+                                </li>
+                                <li>
+                                    <a href="#">Skills</a>
+                                </li>
+                                <li>
+                                    <a href="#">Education</a>
+                                </li>
+                                <li>
+                                    <a href="#">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact me</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
-    
-        <div class="uk-navbar-right">
-    
-            <ul class="uk-navbar-nav">
-                <li>
-                  <a href="#" class="navItem">About me</a>
-                </li>
-                <li>
-                    <a href="#" class="navItem">Parent</a>
-                    <div class="uk-navbar-dropdown">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active"><a href="#">Active</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
+        <!--Sections-->
+        <div class="uk-container uk-container-large">
+            <h1 class="uk-heading-large uk-text-bolder">About me.</h1>
+            <div class="uk-grid-large uk-child-width-expand@s" uk-grid>
+                <div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                            <h3 class="uk-card-title">Computer Science Student</h3>
+                            I love computers and graphic design.
+                            I’ve been working with PC’s since I was a child. I’ve always 
+                            felt passion towards learning new things and decided to learn 
+                            and understand more than the average people do about computers.
+                            I began formally coding in 2017 at Codeacamp with Ruby on Rails.
+                            <br><br>
+                            I’m in collage at Tecnológico de Monterrey Campus Monterrey, studying Computer Science (Ingenieria en Tecnologias
+                            Computacionales).
+                            <br><br>
+                            I’ve participated in several student groups such as Taman Keet 3933 where I worked in the 
+                            programming department (Robotics Representative Team of Tecnológico de Monterrey, Campus Santa Fe),
+                            Activatec (Events Organization Group at of Tecnológico de Monterrey, Campus Santa Fe) as the group
+                            president and in the Audiovisual Production group of Tecnológico de Monterrey, Campus Santa Fe.
+                            <br><br>
+                            Right now I have a Computer Science Club called <a href="https://ctrl-alt-tec.hackclub.com/">Ctrl+Alt+Tec</a> where we teach people to solve problems,
+                            code, be creative and overall make them understand about the current technology and the ones to come.
+                            <br><br>
+                            I am currently doing alot of personal projects and research in machine learning. I specifically ❤ Python and C++ for these tasks. 
+                            I geting more into big data, blockchain, image recognition, neuro science and overall cognitive computing.
+                        </div>
                     </div>
-                </li>
-                <li><a href="#" class="navItem">Item</a></li>
-            </ul>
-    
+                </div>
+                <div>
+                    <div class="uk-card uk-card-body">
+                        <img data-src="img/logos/me.png" width="1800" height="1200" alt="Me" uk-img id="myPhoto">
+                    </div>
+                </div>
+            </div>
         </div>
-      </nav>
-    </div>
-  </div>
-  <div class="uk-container">
-    <div class="uk-child-width-expand@s uk-text-center" uk-grid>
-      <div>
-          <div class="uk-card uk-card-default uk-card-body">
-            Foto con parallax
-          </div>
-      </div>
-      <div>
-          <div class="uk-card uk-card-default uk-card-body">
-            Descripcion
-          </div>
-      </div>
-  </div>
-  </div>
-  <!--Education-->
-  <div class=" not-first align-content-center" id="education">
-    <div class="container align-text-center">
-      <div class="text-container">
-        <h1 class="font-weight-bold animated fadeInUp delay-2s">Education</h1>
-      </div>
-      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
 
-        <ul class="uk-slideshow-items">
-            <li>
-                <<img class="d-block w-100" src="./img/education/tec.png" uk-cover>
-                <div class="uk-position-center uk-position-small uk-text-center">
-                    <h2 uk-slideshow-parallax="x: 100,-100">B.S Computer Science</h2>
-                    <p uk-slideshow-parallax="x: 200,-200">Tecnológico de Monterrey Campus Monterrey</p>
-                    <button type="button" class="btn btn-primary btn-sm" onclick="window.open('https://tec.mx/es')">Information ></button>
+        <div class="uk-container uk-container-large">
+            <h1 class="uk-heading-large uk-text-bolder">Skills.</h1>
+            <div class="uk-height-large uk-background-cover uk-flex" uk-parallax="bgy: -200" style="background-image: url('img/background/9.jpg');">
+                <div class="uk-text-center uk-margin-auto uk-margin-auto-vertical">
+                    <div class="uk-container">
+                        <div class="uk-grid-match uk-child-width-expand@s uk-text-center" uk-grid>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                                    <p>Machine Learning</p>
+                                    <button class="uk-button uk-button-primary">
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                         More
+                                    </button>
+                                </div>
+                             </div>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                                    <p>Web</p>
+                                    <br>
+                                    <button class="uk-button uk-button-primary">
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                         More
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                                    <i class="fa fa-wrench" aria-hidden="true"></i>
+                                    <p>Hardware</p>
+                                    <br>
+                                    <button class="uk-button uk-button-primary">
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                         More
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                                    <i class="fa fa-code" aria-hidden="true"></i>
+                                    <p>Other</p>
+                                    <br>
+                                    <button class="uk-button uk-button-primary">
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                         More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </li>
-            <li>
-                <img class="d-block w-100" src="./img/education/santafe.png" alt="" uk-cover>
-                <div class="uk-position-center uk-position-small uk-text-center">
-                    <h2 uk-slideshow-parallax="x: 100,-100">International Baccalaureate</h2>
-                    <p uk-slideshow-parallax="x: 200,-200">Tecnológico de Monterrey Campus Santa Fe</p>
-                    <button type="button" class="btn btn-primary btn-sm" onclick="window.open('https://www.ibo.org/')">Information ></button>
-                </div>
-            </li>
-            <li>
-                <img class="d-block w-100" src="./img/education/codeacamp.png" uk-cover>
-                <div class="uk-position-center uk-position-small uk-text-center">
-                    <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Full Stack Developer</h2>
-                    <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">CodeaCamp</p>
-                    <button type="button" class="btn btn-primary btn-sm" onclick="window.open('https://www.facebook.com/codeacamp')">Information ></button>
-                </div>
-            </li>
-            <li>
-              <img class="d-block w-100" src="./img/education/escena.png" uk-cover>
-              <div class="uk-position-center uk-position-small uk-text-center">
-                  <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">3D Modeling Courses</h2>
-                  <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Escena</p>
-                  <button type="button" class="btn btn-primary btn-sm" onclick="window.open('http://www.escuelaescena.com/')">Information ></button>
-              </div>
-          </li>
-        </ul>
-    
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-      </div>
-    </div>    
-  </div>
-  <!--Proyects-->
-  <div class="not-first align-content-center" id="proyects">
-    <div class="container align-text-center">
-      <div class="text-container2">
-        <h1 class="font-weight-bold animated fadeInUp delay-2s">Projects</h1>
-      </div>
-      <div>
-        <h4>What I've been working at</h4>
-      </div>
-    </div>
-    <div class="owl-carousel" style="padding-top: 2rem;padding-bottom: 2rem; padding-left: 12rem;padding-right:12rem; display:flex;flex-wrap:wrap;" id="owl-carousel2">
-    </div>  
-  </div>
-  
-  <!-- End your project here-->
+            </div>
+        </div>
 
-  <!-- jQuery -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- UIkit JS -->
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
-  <!--Slick carousel-->
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <!-- Your custom scripts (optional) -->
-  <script type="text/javascript"></script>
+        <div class="uk-container uk-container-large">
+            <h1 class="uk-heading-large uk-text-bolder">Education.</h1>
+            <div class="uk-position-relative uk-visible-toggle " tabindex="-1" uk-slideshow="min-height: 300; max-height: 500; animation: push">
 
-</body>
-</html>
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img src="img/education/tec.png" alt="Tecnologico de Monterrey" uk-cover>
+                        <div class="uk-position-bottom uk-position-small uk-text-center item-slider">
+                            <h2 class="uk-margin-remove uk-text-bolder photoslider">B.S Computer Science</h2>
+                            <p class="uk-margin-remove photoslider">Tecnológico de Monterrey Campus Monterrey</p>
+                            <button class="uk-button uk-button-primary button-slider" onclick="window.open('https://tec.mx/')" >
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                 Information
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/education/santafe.png" alt="Tecnologico de Monterrey Santa Fe" uk-cover>
+                        <div class="uk-position-bottom uk-position-small uk-text-center item-slider">
+                            <h2 class="uk-margin-remove uk-text-bolder photoslider">International Baccalaureate</h2>
+                            <p class="uk-margin-remove photoslider">Tecnológico de Monterrey Campus Santa Fe</p>
+                            <button class="uk-button uk-button-primary button-slider" onclick="window.open('https://www.ibo.org/programmes/diploma-programme/')" >
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                 Information
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/education/codeacamp.png" alt="Codeacamp" uk-cover>
+                        <div class="uk-position-bottom uk-position-small uk-text-center item-slider">
+                            <h2 class="uk-margin-remove uk-text-bolder photoslider">Full Stack Developer Ruby on Rails</h2>
+                            <p class="uk-margin-remove photoslider">Codeacamp</p>
+                            <button class="uk-button uk-button-primary button-slider" onclick="window.open('https://www.facebook.com/codeacamp/')" >
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                 Information
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/education/escena.png" alt="Escena" uk-cover>
+                        <div class="uk-position-bottom uk-position-small uk-text-center">
+                            <h2 class="uk-margin-remove uk-text-bolder photoslider">3D Modeling Courses</h2>
+                            <p class="uk-margin-remove photoslider">ESCENA Escuela de Animación y Arte Digital</p>
+                            <button class="uk-button uk-button-primary button-slider" onclick="window.open('https://www.escena.edu.mx/')" >
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                 Information
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-light" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-light" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            
+            </div>
+        </div>
+
+        <div class="uk-container uk-container-large">
+            <h1 class="uk-heading-large uk-text-bolder">Languages.</h1>
+            <div class="uk-child-width-expand@s" uk-grid>
+                <div>
+                     <div class="uk-card uk-card-hover uk-card-body">
+                        <h1 class="uk-article-title">Spanish</h1>
+                        <p>
+                           Native Speaker
+                        </p>
+                    </div>
+                </div>
+                <div>
+                     <div class="uk-card uk-card-hover uk-card-body">
+                        <h1 class="uk-article-title">English</h1>
+                        <p>
+                            Near Native Speaker (B2 TOEFL)
+                        </p>
+                    </div>
+                </div>
+                <div>
+                     <div class="uk-card uk-card-hover uk-card-body">
+                        <h1 class="uk-article-title">French</h1>
+                        <p>
+                            A2 DELF
+                        </p>
+                    </div>
+                </div>
+                <div>
+                     <div class="uk-card uk-card-hover uk-card-body">
+                        <h1 class="uk-article-title">Mandarin</h1>
+                        <p>
+                            Basic Communication Skills
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-container uk-container-large">
+            <h1 class="uk-heading-large uk-text-bolder">Projects.</h1>
+        </div>
+
+        <div class="uk-container uk-container-large">
+            <h1 class="uk-heading-large uk-text-bolder">Contact me.</h1>
+        </div>
+
+    </body>
+</html> 
