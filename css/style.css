@@ -21,7 +21,21 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+.ghost {  position: absolute;  left: -999999px;}
+
+.body-web{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
 /**/
+.sections-web1{
+    margin-top: 5rem;
+}
+.sections-web{
+    margin-top: 10rem;
+}
+
 #myPhoto{
     border-radius: 0%; 
 }
@@ -34,4 +48,7 @@
 
 .button-slider{
     margin-top: 25px;
+}
+.card-body-new{
+    padding: 20px 20px !important;
 }
